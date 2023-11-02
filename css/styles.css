@@ -15,86 +15,6 @@
 
 
 
-@font-face {
-    font-family: 'Circe';
-    src: url('../fonts/Circe-Light.eot');
-    src: local('Circe Light'), local('Circe-Light'),
-        url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Circe-Light.woff2') format('woff2'),
-        url('../fonts/Circe-Light.woff') format('woff'),
-        url('../fonts/Circe-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Circe';
-    src: url('../fonts/Circe-Regular.eot');
-    src: local('Circe'), local('Circe-Regular'),
-        url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Circe-Regular.woff2') format('woff2'),
-        url('../fonts/Circe-Regular.woff') format('woff'),
-        url('../fonts/Circe-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Circe';
-    src: url('../fonts/Circe-Bold.eot');
-    src: local('Circe Bold'), local('Circe-Bold'),
-        url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Circe-Bold.woff2') format('woff2'),
-        url('../fonts/Circe-Bold.woff') format('woff'),
-        url('../fonts/Circe-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Regular.eot');
-    src: local('Geometria Regular'), local('Geometria-Regular'),
-        url('../fonts/Geometria-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Geometria-Regular.woff2') format('woff2'),
-        url('../fonts/Geometria-Regular.woff') format('woff'),
-        url('../fonts/Geometria-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Medium.eot');
-    src: local('Geometria Medium'), local('Geometria-Medium'),
-        url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Geometria-Medium.woff2') format('woff2'),
-        url('../fonts/Geometria-Medium.woff') format('woff'),
-        url('../fonts/Geometria-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Light.eot');
-    src: local('Geometria Light'), local('Geometria-Light'),
-        url('../fonts/Geometria-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Geometria-Light.woff2') format('woff2'),
-        url('../fonts/Geometria-Light.woff') format('woff'),
-        url('../fonts/Geometria-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-
-
-
-
-
 /*------------------
     Reset styles
 ------------------*/
@@ -187,10 +107,10 @@ input[type=number] {
 :root {
     --bg: #BE8D55;
     --scroll_width: 17px;
-    --text_color: #333;
+    --text_color: #363636;
     --font_size: 14px;
     --font_size_title: 28px;
-    --font_family: 'Inter';
+    --font_family: 'Wix Madefor Display', sans-serif;
 }
 
 
@@ -298,7 +218,7 @@ button {
 
 .cont {
     width: 100%;
-    max-width: 1460px;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -381,994 +301,153 @@ button {
     Header
 ------------*/
 
-body.menu_open {
-    overflow: hidden;
-}
-
-header .mob_menu_btn {
-    display: none;
-    margin-right: 0px;
-    margin-left: auto;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    z-index: 8;
-}
-
-header .close_btn {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    z-index: 103;
-}
-
 header {
-    padding: 26px 0 26px;
-    margin-bottom: 210px;
+    padding: 15px 0;
 }
-
-header .cont {
+.header_wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-header .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-top: 17px;
-}
-
-header .menu .item a {
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    transition: all .4s;
-    white-space: nowrap;
-    margin-right: 44px;
-}
-
-header .menu .item a:hover {
-    color: #FDB728;
-}
-
-.header .menu .item a:active {
-    color: #FDB728;
-}
-
-.header_left {
-    display: flex;
-    align-items: center;
-}
-
 .header_logo {
-    width: 242px;
-    height: auto;
-    margin-right: 118px;
-}
-
-.header_right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;  
+    color: inherit;  
 }
-
-.header_soc {
-    display: flex;
-    align-items: center;
-}
-
-.header_soc a {
+.header_logo span {
     display: block;
-    text-decoration: none;
-    margin-right: 10px;
-    top: 0;
-    position: relative;
-    transition: all .4s;
-    border-radius: 8px;
-    background: #FDB728;
-    width: 39px;
-    height: 39px;
-    display: flex;
+    margin-left: 20px;
+}
+.header_mode {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 326px;
+    display: inline-block;
+}
+.header_mode a {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration-line: underline;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
 }
-
-.header_soc a:hover {
-    top: -7px;
+.header_mode a img {
+    display: block;
+    margin-left: 5px;
 }
-
-.header_contact {
-    margin-right: 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-.header_contact-phone {
-    color: #000;
-    text-align: right;
-    font-family: "Geometria";
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: all .4s;
-}
-.header_contact-time {
-    color: #000;
-    font-family: "Montserrat";
-    font-size: 12px;
-    font-weight: 500;
-    line-height: normal;   
+.header_contacts {
     text-align: end;
 }
-
-
-
-
-
+.header_contacts-phone {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 116%;
+    text-decoration: none;
+    color: inherit;
+}
+.header_contacts-text {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 153.846%;
+}
 
 
 
 .first_section {
-    position: relative;
-    margin-bottom: 190px;
+    background: url(../images/first-section_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 0;
 }
-.first_section-img {
-    width: 634px;
-    height: 511px;
-    flex-shrink: 0;
+.cont {
 }
-.first_section-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.first_section-box {
+.first_section-wrap {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding-bottom: 46px;
+}
+.first_section-info {
+    max-width: 630px;
 }
 .first_section-title {
-    color: #000;
-    font-family: "Circe";
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1;   
-    padding-left: 17px; 
-    margin-bottom: 43px;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 108.696%;
+    margin-bottom: 40px;
 }
 .first_section-title span {
-    padding: 14px 21px;
-    border-radius: 5px;
-    background: #FDB728; 
-    display: inline-block;
-    margin-left: -17px;
-}
-.first_section ul {
-    list-style: none;   
-    margin-left: 99px; 
-    margin-bottom: 47px;
-}
-.first_section ul li {
-    padding-left: 29px;
-    color: #000;
-    font-family: "Montserrat";
-    font-size: 18px;
     font-weight: 400;
-    line-height: normal;  
-    position: relative;
 }
-.first_section ul li + li {
-    margin-top: 9px;
-}
-.first_section ul li:before {
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #FDB728;
-    content: "";
-    left: 0;
-    top: 3px;
-}
-.link {
-    border-radius: 10px;
-    background: #FDB728;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
-    width: 380px;
-    height: 70px;
-    color: #000;
-    text-align: center;
-    font-family: "Geometria";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 70px;  
-    text-decoration: none;
-    display: block;
-    margin-left: 99px;
-    transition: all .4s;
-}
-.link:hover {
-    box-shadow: none;
-}
-.swiper-button-next, 
-.swiper-button-prev {
-    top: 98%;
-}
-.swiper-button-next {
-    left: calc(50% + 60px);
-}
-.swiper-button-prev {
-    left: calc(50% - 90px);
-}
-.swiper-pagination {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 96.5%;
+.first_section-price {
     display: flex;
     align-items: center;
-}
-.swiper-pagination-bullet {
-    display: block;
-    width: 15px;
-    height: 15px;
-    transition: .2s linear;
-    pointer-events: auto;
-    opacity: 1;
-    border-radius: 50%;
-    background: #D9D9D9;
-}
-.swiper-pagination-bullet + .swiper-pagination-bullet {
-    margin-left: 8px !important;
-}
-.swiper-pagination-bullet-active,
-.swiper-pagination-bullet:hover {
-    background: #FDB728;
-    box-shadow: none;
-}
-
-
-
-.work {
-    margin-bottom: 168px;
-}
-.title {
-    color: #000;
-    font-family: "Circe";
-    font-size: 42px;
-    font-weight: 300;
-    line-height: normal;
-    padding-left: 98px;
-    position: relative;
-}
-.title:before {
-    position: absolute;
-    content: "";
-    background: #FDB728;
-    width: 65px;
-    height: 3px;
-    left: 0;
-    top: 31px;
-}
-.block_head {
     margin-bottom: 50px;
 }
-.work_items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -20px;
-    margin-bottom: -22px;
-}
-.work_items > * {
-    width: calc(100%/4 - 20px);
-    margin-left: 20px;
-    margin-bottom: 22px;
-    border-radius: 5px;
-    border: 0.5px solid #D9D9D9;
-    background: #F7F6F9;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.work_item img {
-    max-width: 100%;
-    max-height: 100%
-}
-.work_text {
-    margin-left: 129px;
-    color: #000;
-    font-family: "Geometria";
-    font-size: 24px;
-    font-weight: 300;
-    line-height: normal;
-    max-width: 892px;
-    margin-top: 24px;
-}
-
-
-
-
-
-.parts {
-    margin-bottom: 142px;
-}
-.parts .block_head {
-    margin-bottom: 44px;
-}
-.block_head .desc {
-    color: #000;
-    font-family: "Geometria";
-    font-size: 24px;
-    font-weight: 300;
-    line-height: normal;   
-    margin-top: 5px;
-    padding-left: 98px;
-}
-.parts_items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -20px;
-    margin-bottom: -47px;
-}
-.parts_items > * {
-    width: calc(100%/4 - 20px);
-    margin-left: 20px;
-    margin-bottom: 22px;
-    background: #F7F6F9;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.parts_item-img {
-    height: 184px;
-}
-.parts_item-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.parts_item-title {
-    padding: 15px 20px 15px;
-    color: #000;
-    text-align: center;
-    font-family: "Circe";
-    font-size: 20px;
+.first_section-price-left {
+    font-size: 30px;
+    font-style: normal;
     font-weight: 700;
-    line-height: normal; 
+    line-height: 110%; 
+    padding: 20px 30px;
+    color: #fff;
+    background: #0042EC;
 }
-.parts .link {
-    margin: 90px auto 0;
+.first_section-price-left span {     
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px;  
 }
-
-
-
-
-
-
-.technic {
-    margin-bottom: 208px;
-}
-.technic .swiper-container {
-    padding-bottom: 100px;
-}
-.technic_item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 5px;
-    border: 0.5px solid #D9D9D9;
-    background: #F7F6F9;
-    padding: 34px;
-}
-.technic_item-title {
-    color: #0C0C10;
-    text-align: center;
-    font-family: "Circe";
-    font-size: 42px;
-    font-weight: 300;
-    line-height: normal;
-}
-.technic .link {
-    margin: 12px auto 0;
-}
-.technic_item-img img {
-    width: 100%;
-}
-
-
-
-
-
-
-.duties {
-    margin-bottom: 242px;
-}
-.duties_items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -20px;
-    margin-bottom: -20px;
-}
-.duties_items > * {
-    width: calc(100%/4 - 20px);
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding: 36px 41px 68px;
-    border-radius: 5px;
-    background: #F7F6F9;
-}
-.duties_item-top {
-    display: flex;
-    align-items: center;
-    margin-left: -21px;
-}
-.duties_item-icon {
-    display: block;
-    margin-right: 23px;
-    width: 100px;
-    height: 100px;
-}
-.duties_item-icon img {
-    width: 100%;
-    height: 100%;
-}
-.duties_item-title {
-    color: #000;
-    font-family: "Circe";
-    font-size: 20px;
-    font-weight: 700;
-    line-height: normal;
-}
-.duties_item-text {
-    color: #000;
-    font-family: "Geometria";
+.first_section-price-right {
     font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-
-
-.advantages {
-    margin-bottom: 274px;
-}
-.advantages_items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -20px;
-    margin-bottom: -20px;
-}
-.advantages_items > * {
-    width: calc(100%/3 - 20px);
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding: 36px 41px 68px;
-    border-radius: 5px;
-    background: #F7F6F9;
-}
-.advantages_item-top {
-    display: flex;
-    align-items: center;
-    margin-left: -21px;
-}
-.advantages_item-icon {
-    display: block;
-    margin-right: 23px;
-    width: 100px;
-    height: 100px;
-}
-.advantages_item-icon img {
-    width: 100%;
-    height: 100%;
-}
-.advantages_item-title {
-    color: #000;
-    font-family: "Circe";
-    font-size: 20px;
-    font-weight: 700;
-    line-height: normal;
-}
-.advantages_item-text {
-    color: #000;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-
-
-
-.step {
-    margin-bottom: 215px;
-}
-.step_items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -20px;
-    margin-bottom: -20px;
-    counter-reset: list 0;
-}
-.step_items > * {
-    border-radius: 5px;
-    border: 0.5px solid #D9D9D9;
-    background: #F7F6F9;
-    margin-left: 20px;
-    width: calc(100%/4 - 20px);
-    margin-bottom: 20px;
-    padding: 63px 59px 40px;
-}
-.step_item {
-    position: relative;
-}
-.step_item:before {
-    position: absolute;
-    counter-increment: list;
-    content: counter(list);  
-    color: #FFF;
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 55px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -27px;
-    background: #FDB728;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.step_item-title {
-    color: #000;
-    text-align: center;
-    font-family: "Circe";
-    font-size: 20px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 8px;
-}
-.step_item-text {
-    color: #000;
-    text-align: center;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-}
-.step_bottom {
-    margin-top: 58px;
-}
-.step_bottom-text {
-    color: #000;
-    text-align: center;
-    font-family: "Geometria";
-    font-size: 24px;
-    font-weight: 300;
-    line-height: normal;
-}
-.step .link {
-    margin: 18px auto 0;
-}
-
-
-
-
-
-.about {
-    margin-bottom: 259px;
-}
-.about_wrap {
-    display: flex;
-    justify-content: space-between;
-}
-.about_img {
-   width: 340px;
-   height: 505px;
-   flex-shrink: 0;
-}
-.about_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.about_info {
-    width: calc(100% - 360px);
-}
-.about_items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -20px;
-    margin-bottom: -20px;
-}
-.about_items > * {
-    width: calc(100%/3 - 20px);
-    margin-left: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background: #F7F6F9;
-    padding: 17px 34px 34px 58px;
-}
-.about_item-number {
-    color: #FDB728;
-    font-family: "Montserrat";
-    font-size: 70px;
-    font-weight: 200;
-    line-height: normal;
-}
-.about_item-title {
-    color: #000;
-    font-family: "Circe";
-    font-size: 20px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 10px;
-}
-.about_item-text {
-    color: #000;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-}
-.about blockquote {
-    margin-top: 36px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.about blockquote img {
-    margin: 0 auto;
-}
-.about .text_block {
-    color: #1D1B24;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    width: calc(100% - 109px);
-}
-.about .text_block p + p {
-    margin-top: 20px;
-}
-
-
-
-
-
-
-.faq {
-    margin-bottom: 182px;
-}
-.faq_title {
-    margin-bottom: 44px;
-}
-.accordion_item {
-    margin-bottom: 7px;
-    transition: all 0.4s;
-}
-.accordion_item:last-child {
-    margin-bottom: 0;
-}
-.accordion_item .head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    cursor: pointer;
-    padding: 13px 28px;
-    border-radius: 5px;
-    background: #F7F6F9;
-    transition: all .4s;
-}
-.accordion_item .head .accordion_item-icon {
-    transition: all .4s;
-}
-.accordion_item .head .accordion_item-title {
-    color: #000;
-    font-family: "Circe";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
-    transition: all .4s;
-    margin-left: 19px;
-}
-.accordion_item .data {
-    padding-left: 58px;
-    color: #000;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-    margin-top: 19px;
-    max-width: 1170px;
-}
-.accordion .accordion_item .data {
-    display: none;
-}
-.accordion .accordion_item.active .head .accordion_item-icon {
-    transform: rotate(90deg);
-}
-
-
-
-
-
-
-
-
-.map_wrap {
-    position: relative;
-    width: calc(100% - 407px);
-    transform: translateZ(0);
-    height: 507px;
-    flex-shrink: 0;
-}
-#map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.contacts .block_head .desc {
-    padding-left: 0;
-    color: #000;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-}
-.contacts {
-    margin-bottom: 63px;
-}
-.contacts_wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.contacts_phone {
-    color: #263238;
-    font-family: "Geometria";
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;    
-}
-.contacts_phone a {
-    text-decoration: none;
-    color: #263238;
-    font-family: "Geometria";
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-}
-.contacts_email {
-    margin-bottom: 25px;
-    color: #263238;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-}
-.contacts_email a {
-    text-decoration: none;
-    color: #263238;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-}
-.contacts_adress {
-    margin-bottom: 25px;
-    color: #263238;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    flex-direction: column;
-}
-.contacts_time {
-    color: #263238;
-    font-family: "Geometria";
-    font-size: 16px;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-}
-.contacts_phone b,
-.contacts_email b,
-.contacts_adress b,
-.contacts_time b {
-    color: #000;
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 5px;
-}
-.contacts .link {
-    margin-left: 0;
-}
-.contacts .header_soc a {
-    margin-top: 15px;
-}
-
-
-
-
-
-
-footer {
-    background: #FDB728;
-    height: 20px;
-}
-
-
-
-
-.lazyload,
-.swiper-lazy {
-    transition: opacity .5s linear;
-    opacity: 0;
-}
-
-.lazyload.loaded,
-.swiper-lazy-loaded {
-    opacity: 1;
-}
-
-
-
-
-.lazyload.loaded {
-    opacity: 1;
-}
-
-.lazyload {
-    transition: opacity .5s linear;
-    opacity: 0;
-}
-
-
-
-
-.modal_callback {
-    padding: 42px 50px 48px;
-    border-radius: 10px;
-    background: #FDB728;
-    max-width: 500px;
-    width: 100%;
-    display: none;
-}
-.modal_form  .line {
-    margin-bottom: 10px;
-}
-.modal_form .line .field input {
-    width: 100%;
-    height: 60px;
-    border-radius: 10px;
-    background: #FFF;
-    border: none;
-    padding: 0 38px;
-    color: #474747;
-    text-align: justify;
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-}
-form input[type=checkbox] {
-    display: none;
-}
-form input[type=checkbox]+label {
-    color: #474747;
-    font-family: "Nunito Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    position: relative;
-    display: table-cell;
-    padding-left: 38px;
-    cursor: pointer;
-    text-align: left;
-    vertical-align: middle;
-}
-form input[type=checkbox]+label a {
-    color: #474747;
-    font-family: "Nunito Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
-    text-decoration: underline;   
-}
-form input[type=checkbox]+label:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 30px;
-    height: 30px;
-    content: '';
-    transition: .2s linear;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    padding: 20px 30px;
     background: #fff;
-    border-radius: 5px;
+    position: relative;
 }
-form input[type=checkbox].error+label:before {
-    border-color: red;
-}
-form input[type=checkbox]+label:after {
+.first_section-price-right:before {
     position: absolute;
-    top: 9px;
-    left: 9px;
-    display: block;
-    width: 13px;
-    height: 8px;
-    content: '';
-    transition: opacity .2s linear;
-    transform: rotate(-45deg);
-    opacity: 0;
-    border-bottom: 2px solid #474747; 
-    border-left: 2px solid #474747; 
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 10px 7.5px 0;
+    border-color: transparent #fff transparent transparent;   
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%)
+
 }
-form input[type=checkbox]:checked+label:after {
-    opacity: 1;
+
+
+.first_section-price-right span {
+    color: #FF5430;
 }
-form button {
-    width: 250px;
-    height: 60px;
-    color: #474747;
-    text-align: center;
-    font-family: "Geometria";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-    margin-top: 10px;
-    transition: all .4s;
-    background: #fff;
-    border-radius: 10px;
+.first_section-img {
 }
-.modal_text {
-    color: #474747;
-    text-align: center;
-    font-family: "Circe";
-    font-size: 25px;
-    font-weight: 400;
-    line-height: normal;
-}
-.fancybox__content>.carousel__button.is-close {
-    top: -42px;
-}
-.fancybox__slide {
-    padding: 48px 20px 20px;
-}
+
+
+
+
 
 
 
