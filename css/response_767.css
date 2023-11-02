@@ -1,0 +1,56 @@
+@media print, (max-width: 767px) {
+
+    .header_logo {
+        width: 100px;
+    }
+    .header_logo img {
+        width: 100%;
+    }
+    header .cont {
+        position: relative;
+    }
+    header .header_soc {
+        position: absolute;
+        right: 0;
+        bottom: -58px;
+    }
+    .header_contact-phone {
+        font-size: 14px;
+    }
+    .header_contact-time {
+        display: none;
+    }
+    .parts_items > * {
+        width: calc(100%/2 - 20px);
+    }
+    .work_items > * {
+        width: calc(100%/2 - 20px);
+    }
+    .about_items > * {
+        width: 100%;
+    }
+    .duties_items > * {
+        width: 100%;
+    }
+    .advantages_items > * {
+        width: 100%;
+    }
+    .about_item-box {
+        display: flex;
+        align-items: flex-end;
+    }
+    .about_item-title {
+        margin-bottom: 6px;
+        margin-left: 11px;
+    }
+    .about_item-number {
+        font-size: 60px;
+    }
+
+
+
+
+
+
+
+}
