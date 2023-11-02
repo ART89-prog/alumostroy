@@ -951,3 +951,152 @@ ul {
     margin-top: 15px;
     text-align: center;
 }
+
+
+
+
+
+.windows_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.windows_items > * {
+    padding: 49px 20px 49px 20px;
+    width: calc(100%/4);
+    text-align: center;
+    border-right: 2px solid #CFD1D8;
+}
+.windows_item:last-child {
+    border-right: none;
+}
+.windows_item-title {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.44;
+    margin-top: 10px; 
+}
+
+
+
+
+
+.proposal .cont {
+    max-width: 1440px;
+}
+.proposal_wrap {
+    padding: 120px 145px;
+    background: #ECEFF4;
+}
+.proposal_box {
+    display: flex;
+    gap: 125px;
+}
+.proposal .form {
+    width: 445px;
+    flex-shrink: 0;
+}
+.proposal .form-data {
+    flex-direction: column;
+}
+.proposal .line {
+    flex-direction: column;
+    width: 100%;
+}
+.proposal .line .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.proposal ul li {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+    display: flex;
+    align-items: flex-start;
+}
+.proposal ul li + li {
+    margin-top: 20px;
+}
+.proposal ul li img {
+    display: block;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+
+
+
+
+.reviews {
+}
+.block {
+}
+.cont {
+}
+.reviews_title {
+}
+.title-center {
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.slide {
+}
+.swiper-slide {
+}
+.reviews_wrap {
+    display: flex;
+    gap: 31px;
+    padding: 0 90px;
+}
+.reviews_img {
+}
+.reviews_info {
+}
+.reviews_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.reviews_photo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.reviews_photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.reviews_author {
+}
+.reviews_name {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.reviews_adress {
+    color: #7D7F84;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157%;
+}
+.reviews_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
