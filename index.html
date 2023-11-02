@@ -35,7 +35,6 @@
 
 	<link rel="stylesheet" href="css/styles.css">
 
-	<link rel="stylesheet" href="css/response_1380.css" media="print, (max-width: 1380px)">
 	<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
 	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
 	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
@@ -101,21 +100,22 @@
 					<div class="calculation_wrap">
 						<div class="calculation_title">Сделаем предварительный <span>расчёт стоимости</span> по вашим замерам и сохраним за вами эту цену!</div>
 						<div class="calculation_text">Если наши замеры на вашем объекте не будут сильно отличаться от того, что прислали вы, то цена после предварительного расчёта останется неизменной</div>
-						<form class="form" >                   
+						<form class="form" id="feedback-form-1">
 							<div class="form-data">
 								<div class="line">
 									<div class="field">
-										<input type="text" name="name" value="" class="input required" required="" placeholder="Ваше имя">
+										<input type="text" name="name" value="" class="input required" required placeholder="Ваше имя">
 									</div>
 									<div class="field">
-										<input type="tel" name="phone" value="" class="input required" required="" placeholder="Ваш телефон">
-									</div>  
-									<button type="submit" class="submit_btn">
-										Заявка на предварительный расчёт
-									</button>	               
-								</div> 
-								<div class="form_politic">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></div>                  
+										<input type="tel" name="phone" value="" class="input required" required placeholder="Ваш телефон">
+									</div>                 
+								</div>                    
+								<button type="submit" class="submit_btn">
+									<span>Заявка на предварительный расчёт</span>
+								</button>
 							</div>  
+							<input type="hidden" name="title" value="Консультация">
+							<div class="form_politic">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></div>
 						</form>
 					</div>
 				</div>					
@@ -123,7 +123,7 @@
 
 
 
-			<section class="gallery">
+			<section class="gallery block">
                 <div class="cont">
                     <div class="gallery_title title">Устанавливаем все типы<br> алюминиевых конструкций</div>  
                     <div class="gallery_wrap">
@@ -181,9 +181,43 @@
 
 
 
-			<section class="equipment">
+
+			<section class="development block">
 				<div class="cont">
-					<div class="equipment_title"></div>
+					<div class="development_wrap">
+						<div class="development_info">
+							<div class="development_title">Необходимо разработать проект <span>под ваш объект</span> с нуля?</div>
+							<div class="development_text">Наши инженеры сделают детальный проект под размеры проёмов на вашем объекте. Проект разрабатывается в программе AutoCad и содержит в себе точную информацию о всех используемых материалах, размерах конструкций, а также узлах крепления и примыкания</div>
+							<form class="form" id="feedback-form-2">
+								<div class="form-data">
+									<div class="line">
+										<div class="field">
+											<input type="text" name="name" value="" class="input required" required placeholder="Ваше имя">
+										</div>
+										<div class="field">
+											<input type="tel" name="phone" value="" class="input required" required placeholder="Ваш телефон">
+										</div>                 
+									</div>                    
+									<button type="submit" class="submit_btn">
+										<span>Заявка на разработку проекта</span>
+									</button>
+								</div>  
+								<input type="hidden" name="title" value="Консультация">
+								<div class="form_politic">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></div>
+							</form>		
+						</div>
+						<div class="development_img">
+							<img src="images/development_img.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="equipment block">
+				<div class="cont">
+					<div class="equipment_title title-center">Предоставляем полну дополнительную<br> комплектацию</div>
 					<div class="equipment_items">
 						<div class="equipment_item">
 							<div class="equipment_item-img">
@@ -195,35 +229,352 @@
 							<div class="equipment_item-img">
 								<img src="images/equipment2.png" alt="">
 							</div>
-							<div class="equipment_item-text">Подоконники</div>
+							<div class="equipment_item-text">Отливы</div>
 						</div>
 						<div class="equipment_item">
 							<div class="equipment_item-img">
 								<img src="images/equipment3.png" alt="">
 							</div>
-							<div class="equipment_item-text">Подоконники</div>
+							<div class="equipment_item-text">Москитные<br> сетки</div>
 						</div>
 						<div class="equipment_item">
 							<div class="equipment_item-img">
 								<img src="images/equipment4.png" alt="">
 							</div>
-							<div class="equipment_item-text">Подоконники</div>
+							<div class="equipment_item-text">Детские замки</div>
 						</div>
 						<div class="equipment_item">
 							<div class="equipment_item-img">
 								<img src="images/equipment5.png" alt="">
 							</div>
-							<div class="equipment_item-text">Подоконники</div>
+							<div class="equipment_item-text">Противовзломная<br> фурнитура</div>
 						</div>
 						<div class="equipment_item">
 							<div class="equipment_item-img">
 								<img src="images/equipment6.png" alt="">
 							</div>
-							<div class="equipment_item-text">Подоконники</div>
+							<div class="equipment_item-text">Тонировка<br> стекла</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
+
+
+
+			<section>
+				<div class="estimate">
+					<div class="cont">
+						<div class="estimate_wrap">
+							<div class="estimate_title title_center">Уже есть просчитанная смета? Присылайте нам на пересчёт и получите <span>скидку до 10%</span></div>
+							<form class="form" id="feedback-form-3">
+								<div class="form-data">
+									<div class="line">
+										<div class="field">
+											<input type="tel" name="phone" value="" class="input required" required placeholder="Ваш телефон">
+										</div>
+										<div class="field">
+											<input type="text" name="name" value="" class="input required" required placeholder="Ваше имя">
+										</div>
+									</div>                    
+									<button type="submit" class="submit_btn">
+										<span>Пересчитать со скидкой </span>
+									</button>
+								</div>  
+								<input type="hidden" name="title" value="Консультация">
+								<div class="form_politic">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></div>
+							</form>		
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="production">
+				<div class="cont">
+					<div class="production_wrap">
+						<div class="production_info">
+							<div class="production_title">Наше производство</div>
+							<div class="production_text">
+								<p>У нас своё собственное технологичное производство с покрасочным, сборочным и складским цехами, расположенное в подмосковном городе Пушкино.</p>
+								<p>Все наши материалы, фурнитура и краски сертифицированы, а каждое готовое изделие проходит строгий контроль качества.</p>
+							</div>
+							<ul>
+								<li>
+									<img src="images/production_icon1.svg" alt="">
+									<span>Даём гарантию на изделия до 7 лет</span>
+								</li>
+								<li>
+									<img src="images/production_icon2.svg" alt="">
+									<span>Предоставляем бесплатное техническое обслуживание до 3 лет</span>
+								</li>
+							</ul>	
+						</div>						
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="slide swiper-slide">
+									<img src="images/slider-production/production_slider1.png" alt="">
+								</div>
+								<div class="slide swiper-slide">
+									<img src="images/slider-production/production_slider2.png" alt="">
+								</div>
+								<div class="slide swiper-slide">
+									<img src="images/slider-production/production_slider3.png" alt="">
+								</div>
+								<div class="slide swiper-slide">
+									<img src="images/slider-production/production_slider4.png" alt="">
+								</div>
+								<div class="slide swiper-slide">
+									<img src="images/slider-production/production_slider5.png" alt="">
+								</div>						
+							</div>	
+	
+							<div class="swiper-pagination"></div>
+	
+							<div class="swiper-button-prev">
+								<img src="images/prev.svg" alt="">
+							</div>
+							<div class="swiper-button-next">
+								<img src="images/next.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="quality">
+				<div class="cont">
+					<div class="quality_wrap">
+						<div class="quality_title title">Используем только качественные<br> и проверенные временем<br> алюминиевые профили</div>
+						<div class="quality_box pb120">
+							<div class="quality_logo">
+								<img src="images/quality_logo1.png" alt="">
+							</div>
+							<div class="quality_items">
+								<a href="#" class="quality_item">
+									<div class="quality_item-img">
+										<img src="images/quality1.png " alt="">
+									</div>
+									<div class="quality_item-title">Alumark s44</div>
+									<div class="quality_item-link">
+										<span>Подробнее </span>
+										<img src="images/arrow.svg" alt="">
+									</div>
+								</a>
+								<a href="#" class="quality_item">
+									<div class="quality_item-img">
+										<img src="images/quality2.png " alt="">
+									</div>
+									<div class="quality_item-title">Alumark s50</div>
+									<div class="quality_item-link">
+										<span>Подробнее </span>
+										<img src="images/arrow.svg" alt="">
+									</div>
+								</a>
+								<a href="#" class="quality_item">
+									<div class="quality_item-img">
+										<img src="images/quality3.png " alt="">
+									</div>
+									<div class="quality_item-title">Alumark s70</div>
+									<div class="quality_item-link">
+										<span>Подробнее </span>
+										<img src="images/arrow.svg" alt="">
+									</div>
+								</a>
+								<a href="#" class="quality_item">
+									<div class="quality_item-img">
+										<img src="images/quality4.png " alt="">
+									</div>
+									<div class="quality_item-title">Alumark f50</div>
+									<div class="quality_item-link">
+										<span>Подробнее </span>
+										<img src="images/arrow.svg" alt="">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="quality_box">
+							<div class="quality_logo">
+								<img src="images/quality_logo2.png" alt="">
+							</div>
+							<div class="quality_items">
+								<a href="#" class="quality_item">
+									<div class="quality_item-img">
+										<img src="images/quality5.png " alt="">
+									</div>
+									<div class="quality_item-title">Alutech ALT w62</div>
+									<div class="quality_item-link">
+										<span>Подробнее </span>
+										<img src="images/arrow.svg" alt="">
+									</div>
+								</a>
+								<a href="#" class="quality_item">
+									<div class="quality_item-img">
+										<img src="images/quality6.png " alt="">
+									</div>
+									<div class="quality_item-title">Alutech ALT w62</div>
+									<div class="quality_item-link">
+										<span>Подробнее </span>
+										<img src="images/arrow.svg" alt="">
+									</div>
+								</a>
+								<a href="#" class="quality_item">
+									<div class="quality_item-img">
+										<img src="images/quality7.png " alt="">
+									</div>
+									<div class="quality_item-title">Alutech ALT sl160</div>
+									<div class="quality_item-link">
+										<span>Подробнее </span>
+										<img src="images/arrow.svg" alt="">
+									</div>
+								</a>
+								<a href="#" class="quality_item">
+									<div class="quality_item-img">
+										<img src="images/quality8.png " alt="">
+									</div>
+									<div class="quality_item-title">Alutech ALT f50</div>
+									<div class="quality_item-link">
+										<span>Подробнее </span>
+										<img src="images/arrow.svg" alt="">
+									</div>
+								</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="application block">
+				<div class="cont">
+					<div class="application_wrap">
+						<div class="application_left">
+							<div class="application_title title_start">Используем стеклопакеты с мультифункциональным стеклом</div>
+							<ul>
+								<li>
+									<img src="images/plus.svg" alt="">
+									<span>Мультифункциональное стекло обладает специальными солнцезащитными и теплосберегающими функциями наряду с высокой степенью светопропускаемости.</span>
+								</li>
+								<li>
+									<img src="images/plus.svg" alt="">
+									<span>Такое стекло имеет слой серебряного напыления, который зимой отражает тепло внутрь помещения, а летом — на улицу.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="application_right">
+							<div class="application_right-box">
+								<div class="application_logo">
+									<img src="images/application_logo1.png" alt="">
+								</div>
+								<div class="application_text">Английские сверхпрочные, энергосбе-регающие стёкла со специальным покрытием</div>	
+							</div>
+							<div class="application_right-box">
+								<div class="application_logo">
+									<img src="images/application_logo2.png" alt="">
+								</div>
+								<div class="application_text">Крупнейший мировой производитель стекла, визитной карточкой которого является специальное магнетронное напыление</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="accessories block">
+				<div class="cont">
+					<div class="accessories_wrap">
+						<div class="accessories_title title">Устанавливаем накладную и скрытую фурнитуру брендов с мировым именем</div>
+						<div class="accessories_items">
+							<div class="accessories_item">
+								<div class="accessories_item-img">
+									<img src="images/accessories1.png" alt="">
+								</div>
+								<div class="accessories_item-logo">
+									<img src="images/accessories_logo1.png" alt="">
+								</div>
+								<div class="accessories_item-text">Итальянская фурнитура высшего качества, оснащённая механизмами препятствующими взлому</div>
+							</div>
+							<div class="accessories_item">
+								<div class="accessories_item-img">
+									<img src="images/accessories2.png" alt="">
+								</div>
+								<div class="accessories_item-logo">
+									<img src="images/accessories_logo2.png" alt="">
+								</div>
+								<div class="accessories_item-text">Немецкая оконная и дверная фурнитура с более чем 85 летней историей</div>
+							</div>
+							<div class="accessories_item">
+								<div class="accessories_item-img">
+									<img src="images/accessories3.png" alt="">
+								</div>
+								<div class="accessories_item-logo">
+									<img src="images/accessories_logo3.png" alt="">
+								</div>
+								<div class="accessories_item-text">Скрытолежащая немецкая фурнитура предназначенная для установки на алюминиевые окна</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+			<section class="colers">
+				<div class="cont">
+					<div class="colers_wrap">
+						<div class="colers_title title_start">Можем покрасить конструкции <span>в 213 цветов по шкале RAL</span></div>
+						<div class="colers_items">
+							<div class="colers_item">
+								<div class="colers_item-img">
+									<img src="images/colers1.png" alt="">
+								</div>
+								<div class="colers_item-title">Стандарт</div>
+							</div>
+							<div class="colers_item">
+								<div class="colers_item-img">
+									<img src="images/colers2.png" alt="">
+								</div>
+								<div class="colers_item-title">Матовый</div>
+							</div>
+							<div class="colers_item">
+								<div class="colers_item-img">
+									<img src="images/colers3.png" alt="">
+								</div>
+								<div class="colers_item-title">Порошковая<br> Муар</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="windows">
+				<div class="cont">
+					<div class="windows_title title_center">Изготовляем оконные конструкции любой сложности, формы и размеров</div>
+					<div class="windows_items">
+						<div class="windows_item">
+							<div class="windows_item-img">
+								<img src="" alt="">
+							</div>
+							<div class="windows_item-title"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
 
 			<footer>
 				
