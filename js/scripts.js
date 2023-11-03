@@ -46,6 +46,28 @@ $(() => {
 	}
 
 
+	if ($('.modal_slider .swiper-container').length) {
+		new Swiper('.modal_slider .swiper-container', {
+			loop: true,
+			speed: 750,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 20,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		})
+	}
+
+
 
 	// Показать контент 
 	$(".link-more").click(function (e) {

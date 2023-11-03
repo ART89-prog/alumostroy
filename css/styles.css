@@ -649,6 +649,7 @@ header {
     position: relative;
     overflow: hidden;
     padding-bottom: 19.75%;
+    cursor: pointer;
 }
 .gallery_item span {
     display: inline-block;
@@ -1375,7 +1376,7 @@ ul {
     flex-wrap: wrap;
 }
 .windows_items > * {
-    padding: 49px;
+    padding: 49 px;
     width: calc(100%/4);
     text-align: center;
     border-right: 2px solid #CFD1D8;
