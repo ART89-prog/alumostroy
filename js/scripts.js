@@ -1,6 +1,6 @@
 $(() => {
 
-	
+
 	if ($('.production .swiper-container').length) {
 		new Swiper('.production .swiper-container', {
 			loop: true,
@@ -14,7 +14,7 @@ $(() => {
 				el: '.swiper-pagination',
 				type: 'bullets',
 				clickable: true,
-			  },
+			},
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
@@ -37,7 +37,7 @@ $(() => {
 				el: '.swiper-pagination',
 				type: 'bullets',
 				clickable: true,
-			  },
+			},
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
@@ -46,6 +46,13 @@ $(() => {
 	}
 
 
+
+	// Показать контент 
+	$(".link-more").click(function (e) {
+		e.preventDefault();
+		$(".construction_item").removeClass("hide");
+		$(".link-more").addClass("active");
+	});
 
 
 	// Выбор файла
@@ -122,7 +129,7 @@ $(() => {
 		}
 	})
 
-	
+
 
 
 	window.addEventListener('resize', function () {
