@@ -46,8 +46,8 @@ $(() => {
 	}
 
 
-	if ($('.modal_slider .swiper-container').length) {
-		new Swiper('.modal_slider .swiper-container', {
+	if ($('.modal .swiper-container').length) {
+		new Swiper('.modal .swiper-container', {
 			loop: true,
 			speed: 750,
 			watchSlidesVisibility: true,
@@ -66,6 +66,14 @@ $(() => {
 			}
 		})
 	}
+
+
+
+
+
+
+
+
 
 
 

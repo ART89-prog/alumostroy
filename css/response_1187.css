@@ -1,7 +1,155 @@
 @media print, (max-width: 1187px) {
 
-    
- 
+    .first_section-title {
+        font-size: 36px;
+    }
+    .first_section-info {
+        max-width: 524px;
+    }
+    .first_section-price-left {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .first_section-price-left span {
+        font-size: 36px;
+    }
+    .first_section-price-right {
+        font-size: 14px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .first_section-price {
+        margin-bottom: 40px;
+    }
+    .calculation_wrap {
+        padding: 40px;
+    }
+    .title_start {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .calculation .form-data .line {
+        width: 100%;
+    }
+    .calculation .form-data .submit_btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .calculation .form-data {
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .title-center {
+        font-size: 28px;
+    }
+    .gallery_wrap > * {
+        width: calc(100%/3 - 30px);
+    }
+    .development .line {
+        flex-wrap: wrap;
+    }
+    .development .form-data .line .field:first-child {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .equipment_items {
+        flex-wrap: wrap;
+    }
+    .equipment_items > * {
+        width: calc(100%/3 - 30px);
+    }
+    .estimate .form-data .line {
+        width: 100%;
+    }
+    .estimate .form-data .submit_btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .estimate .form-data {
+        flex-wrap: wrap;
+    }
+    .estimate_wrap {
+        padding: 120px 97px;
+    }
+    .demonstration_wrap {
+        padding: 48px;
+    }
+    .demonstration_text {
+        font-size: 18px;
+    }
+    .quality_wrap {
+        padding: 120px 0px;
+        border: none;
+    }
+    .accessories_wrap {
+        padding: 0px;
+        border: none;
+    }
+    .accessories {
+        border-top: 2px solid #CFD1D8;
+        border-bottom: 2px solid #CFD1D8;
+        margin-bottom: 120px;
+    }
+    .colers_wrap {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .colers_title {
+        max-width: 670px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .colers_items {
+        margin: 0 auto;
+        width: calc(100% - 230px);
+    }
+    .proposal_wrap {
+        padding: 120px 47px;
+    }
+    .proposal_box {
+        gap: 30px;
+    }
+    .certificate_wrap {
+        padding: 47px 75px;
+        border: none;
+        border-top: 2px solid #CFD1D8;        
+    }
+    .contract-wrap {
+        padding: 47px 75px;
+    }
+    .contract_text {
+        font-size: 28px;
+    }
+    .director_box {
+        gap: 50px;
+    }
+    .director_wrap {
+        padding: 120px 47px;
+        border: none;
+    }
+    .director ul > * {
+        width: 100%;
+    }
+    .director_bottom_text {
+        font-size: 20px;
+    }
+    .contacts {
+        border-top: 2px solid #CFD1D8;    
+    }
+
+
+
+
+
+
+
+
+
 
 
 

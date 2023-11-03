@@ -416,7 +416,7 @@ header {
 }
 .first_section-price {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 50px;
 }
 .first_section-price-left {
@@ -505,7 +505,7 @@ header {
     background: var(--bg);
 }
 .calculation_wrap {
-    margin-top: -130px;
+    margin-top: -165px;
     padding: 60px;
     background: #fff;
 }
@@ -660,6 +660,10 @@ header {
     left: 0;
     bottom: 0;
     transition: all .2s;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
 }
 .gallery_item img {
     position: absolute;
@@ -807,6 +811,9 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.equipment_item-text {
+    margin-top: 5px;
 }
 
 
@@ -1079,11 +1086,11 @@ header {
     flex-shrink: 0;
 }
 .production_slider .swiper-button-next {
-    right: -5px;
+    left: calc(100% - 60px);
     transform: translateY(-50%);
 }
 .production_slider .swiper-button-prev {
-    left: calc(50% - 10px);
+    left: 540px;
     transform: translateY(-50%);
 }
 .production_slider .swiper-horizontal>.swiper-pagination-bullets, 
@@ -1205,6 +1212,9 @@ header {
 .application {
     position: relative;
 }
+.application.block {
+    padding-top: 0;
+}
 .application:before {
     position: absolute;
     content: "";
@@ -1244,6 +1254,12 @@ ul {
 }
 .application_logo {
     margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+}
+.application_text {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1376,7 +1392,7 @@ ul {
     flex-wrap: wrap;
 }
 .windows_items > * {
-    padding: 49 px;
+    padding: 49px;
     width: calc(100%/4);
     text-align: center;
     border-right: 2px solid #CFD1D8;
@@ -1775,4 +1791,12 @@ footer {
 footer .header_mode {
     margin-left: 160px;
     margin-right: auto;
+}
+
+
+
+
+
+.modal {
+    display: none;
 }
