@@ -262,33 +262,49 @@
 
 
 
-			<section>
-				<div class="estimate">
-					<div class="cont">
-						<div class="estimate_wrap">
-							<div class="estimate_title title_center">Уже есть просчитанная смета? Присылайте нам на пересчёт и получите <span>скидку до 10%</span></div>
-							<form class="form" id="feedback-form-3">
-								<div class="form-data">
-									<div class="line">
-										<div class="field">
-											<input type="tel" name="phone" value="" class="input required" required placeholder="Ваш телефон">
-										</div>
-										<div class="field">
-											<input type="text" name="name" value="" class="input required" required placeholder="Ваше имя">
-										</div>
-									</div>                    
-									<button type="submit" class="submit_btn">
-										<span>Пересчитать со скидкой </span>
-									</button>
-								</div>  
-								<input type="hidden" name="title" value="Консультация">
-								<div class="form_politic">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></div>
-							</form>		
-						</div>
+			<section  class="estimate">
+				<div class="cont">
+					<div class="estimate_wrap">
+						<div class="estimate_title title-center">Уже есть просчитанная смета? Присылайте нам на пересчёт и получите <span>скидку до 10%</span></div>
+						<form class="form" id="feedback-form-3">
+							<div class="line2">
+								<div class="field">
+									<div class="upload-file__wrapper">
+										<input type="file" name="file" id="upload-file__input_1" class="upload-file__input" accept="" multiple onchange="handleFiles(this.files)">
+										<label class="upload-file__label" for="upload-file__input_1">
+											<img src="images/upload.svg" alt="">
+											<span class="upload-file__text">Прикрепить файл</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-data">								
+								<div class="line">
+									<div class="field">
+										<input type="tel" name="phone" value="" class="input required" required placeholder="Ваш телефон">
+									</div>
+									<div class="field">
+										<input type="text" name="name" value="" class="input required" required placeholder="Ваше имя">
+									</div>
+								</div>                    
+								<button type="submit" class="submit_btn">
+									<span>Пересчитать со скидкой </span>
+								</button>
+							</div>  
+							<input type="hidden" name="title" value="Консультация">
+							<div class="form_politic">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></div>
+						</form>		
 					</div>
 				</div>
 			</section>
 
+
+
+			<section class="construction block">
+				<div class="cont">
+					<div class="construction_title title-center"></div>
+				</div>
+			</section>
 
 
 
@@ -745,7 +761,7 @@
 								</li>
 							</ul>
 						</div>
-						<a href="images/certificate1.png" class="license_item" data-fancybox="gallery">
+						<a href="images/certificate1.png" class="certificate_item" data-fancybox="gallery">
 							<img src="images/certificate1.png" alt="">
 						</a>
 					</div>
@@ -763,7 +779,7 @@
 							<div class="contract_title title_start">Работаем по договору, в котором указана точная стоимость всех материалов и работ, а также точные сроки сдачи объекта</div>
 							<div class="contract_text">Цена после заключения договора не меняется!</div>
 						</div>
-						<a href="images/certificate2.png" class="license_item" data-fancybox="gallery">
+						<a href="images/certificate2.png" class="contract_item" data-fancybox="gallery">
 							<img src="images/certificate2.png" alt="">
 						</a>
 					</div>
@@ -776,32 +792,87 @@
 			<section class="director">
 				<div class="cont">
 					<div class="director_wrap">
-						<div class="director_info">
-							<div class="director_photo">
-								<img src="images/director.png" alt="">
+						<div class="director_box">
+							<div class="director_info">
+								<div class="director_photo">
+									<img src="images/director.png" alt="">
+								</div>
+								<div class="director_name">Виталий Александрович</div>
+								<div class="director_post">Генеральный директор</div>
 							</div>
-							<div class="director_name">Виталий Александрович</div>
-							<div class="director_post">Генеральный директор</div>
+							<ul>
+								<li>
+									<img src="images/plus.svg" alt="">
+									<span>Наши <b>цены в среднем до 30% ниже</b>, чем у конкурентов, потому что у нас собственное производство, всего один офис продаж и нет расходов на наружную и телевизионную рекламу</span>
+								</li>
+								<li>
+									<img src="images/plus.svg" alt="">
+									<span>Остеклим ваш объект <b>быстро, от 5-ти дней</b>, так как наше производство работает круглосуточно и у нас есть свой склад с профилем и фурнитурой</span>
+								</li>
+								<li>
+									<img src="images/plus.svg" alt="">
+									<span>Предлагаем <b>скидки до 30%</b> для крупных заказов, приглашаем к сотрудничеству подрядчиков, дилеров и строительные компании</span>
+								</li>
+								<li>
+									<img src="images/plus.svg" alt="">
+									<span>Работаем <b>строго по договору</b>, в котором прописываем перечень работ, их финальную стоимость и сроки</span>
+								</li>
+							</ul>	
 						</div>
-						<ul>
-							<li>
-								<img src="images/plus.svg" alt="">
-								<span>Наши <b>цены в среднем до 30% ниже</b>, чем у конкурентов, потому что у нас собственное производство, всего один офис продаж и нет расходов на наружную и телевизионную рекламу</span>
-							</li>
-							<li>
-								<img src="images/plus.svg" alt="">
-								<span>Остеклим ваш объект <b>быстро, от 5-ти дней</b>, так как наше производство работает круглосуточно и у нас есть свой склад с профилем и фурнитурой</span>
-							</li>
-							<li>
-								<img src="images/plus.svg" alt="">
-								<span>Предлагаем <b>скидки до 30%</b> для крупных заказов, приглашаем к сотрудничеству подрядчиков, дилеров и строительные компании</span>
-							</li>
-							<li>
-								<img src="images/plus.svg" alt="">
-								<span>Работаем <b>строго по договору</b>, в котором прописываем перечень работ, их финальную стоимость и сроки</span>
-							</li>
-						</ul>
-					</div>
+						<div class="director_bottom">
+							<div class="director_bottom-icon">
+								<img src="images/check.svg" alt="">
+							</div>
+							<div class="director_bottom_title title-center">По предоплате от 30% зафиксируем за вами эту цену и она не изменится</div>
+							<div class="director_bottom_text">Вне зависимости от изменения закупочной стоимости используемых материалов на рынке</div>
+						</div>
+					</div>	
+				</div>					
+			</section>
+
+
+
+
+
+			<section class="contacts">
+				<div class="cont">  
+					
+					<div class="contacts_box">   
+						                     
+						<div class="contacts_items">
+							<div class="contacts_title">Контакты</div>     
+							<div class="contacts_item">
+								<div class="contacts_item-info">
+									<div class="contacts_item-title">E-mail:</div>
+									<a href="mailto:info@alumostroy.ru" class="contacts_item-email">info@alumostroy.ru</a><br>
+								</div>
+							</div> 
+							<div class="contacts_item">                                    
+								<div class="contacts_item-info">
+									<div class="contacts_item-title">Телефоны:</div>
+									<a href="tel:74951966466" class="contacts_item-phone">+7 495 196-64-66</a>
+									<a href="tel:79913398822" class="contacts_item-phone">+7 991 339-88-22</a>
+									<a href="tel:+79691237811" class="contacts_item-phone">+7 969 123-78-11</a>
+								</div>
+							</div>
+							<div class="contacts_item">                                    
+								<div class="contacts_item-info">
+									<div class="contacts_item-title">Адрес производства:</div>
+									<div class="contacts_item-text">г. Пушкино, ул. Льва Толстого, д. 14, склад № 10</div>
+								</div>
+							</div>
+							<div class="contacts_item">                                    
+								<div class="contacts_item-info">
+									<div class="contacts_item-title">Адрес офиса:</div>
+									<div class="contacts_item-text">г. Пушкино, ул. Добролюбова, влд. 20, офис 208</div>
+								</div>
+							</div>                              
+						</div>
+						
+						<div class="map_wrap">
+							<div id="map"></div>
+						</div> 
+					</div>													  
 				</div>
 			</section>
 			
@@ -971,33 +1042,56 @@
 
 		<script src="https://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
 		<script>
-			$(window).on('load', () => {
-				ymaps.ready(() => {
-					let myMap = new ymaps.Map('map', {
-						center: [55.745640335105804,37.48423549999995],
-						zoom: 16,
-						controls: []
-					})
-							
-					// Кастомный маркер
-					let myPlacemark = new ymaps.Placemark([55.745640335105804,37.48423549999995], {}, {
-						iconLayout : 'default#image',
-						iconImageHref : 'images/marker.svg',
-						iconImageSize : [44, 50],
-						/*iconImageOffset : [-116, -172]*/
-					})
-	
-					myMap.geoObjects.add(myPlacemark)
-	
-					myMap.controls.add('zoomControl', {
-						position : {
-							right : '20px',
-							top   : '20px'
-						}
-					})
-					myMap.behaviors.disable('scrollZoom')
-				})
-			})
+			ymaps.ready(init);
+
+			function init() {
+
+			var map = new ymaps.Map('map', {
+				center: [56.0132,37.836231], 
+				zoom: 16,
+				iconLayout : 'default#image',
+				iconImageHref : 'images/marker.svg',
+				iconImageSize : [43, 50],
+				controls: ['zoomControl', 'fullscreenControl']
+			});
+
+			// Objects collection
+			var collection = {
+				type: "FeatureCollection",
+				features: [
+				{
+					type: "Feature",
+					id: 0,
+					geometry: {
+					type: "Point",
+					coordinates: [56.011318,37.847164]
+					},
+					properties: {
+					
+					}
+				},
+				{
+					type: "Feature",
+					id: 1,					
+					geometry: {
+					type: "Point",
+					coordinates: [56.0132,37.836231]
+					},
+					properties: {
+					
+					}
+				}
+				]
+			};
+			
+
+			// Object Manager
+			objectManager = new ymaps.ObjectManager({ clusterize: true });
+			objectManager.add(collection);
+
+			map.geoObjects.add(objectManager);
+
+			}
 		</script>
 
 

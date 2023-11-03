@@ -48,6 +48,21 @@ $(() => {
 
 
 
+	// Выбор файла
+	$('body').on('change', 'form input[type=file]', function () {
+		let label = $(this).closest('.file').find('label')
+
+		label.addClass('active')
+		label.find('span').text($(this).val())
+	})
+
+
+	function handleFiles(file) {
+		const fileList = file;
+		$(".upload-file__text").text(fileList[0]["name"]);
+	}
+
+
 	// Ширина окна для ресайза
 	WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
