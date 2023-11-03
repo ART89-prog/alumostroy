@@ -351,6 +351,7 @@ header {
 .header_mode a .icon {
     display: block;
     margin-left: 5px;
+    margin-top: 3px;
     width: 20px;
     height: 7px;
     stroke: var(--color1);     
@@ -550,13 +551,19 @@ header {
     font-weight: 400;
     line-height: 1.5; 
     padding: 10px 20px;
-    color: #000;
+    color: var(--text_color);
     border: none;    
     border: 2px solid #CFD1D8;
     background: #FFF;
 }
 .form-data .line .input::placeholder {
     color: #7D7F84;
+}
+.form-data .line .input:focus {
+    border: 2px solid var(--color1);
+}
+.form-data .line .input.error {
+    border: 2px solid #FF3A3A;
 }
 .form-data .submit_btn {
     width: 375px;
@@ -639,6 +646,9 @@ header {
     text-decoration: none;
     border: 6px solid transparent;
     transition: all .2s;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 19.75%;
 }
 .gallery_item span {
     display: inline-block;
@@ -651,6 +661,9 @@ header {
     transition: all .2s;
 }
 .gallery_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -679,6 +692,9 @@ header {
 .gallery_item-view img {
     width: 24px;
     height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .gallery_item:hover .gallery_item-view {
     opacity: 1;
@@ -734,7 +750,16 @@ header {
 .development .form_politic {
     color: #fff;
 }
-
+.development_img {
+    width: 540px;
+    height: 558px;
+    flex-shrink: 0;
+}
+.development_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -767,6 +792,20 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 144.444%;
+}
+.equipment_item-img {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 93.75%;
+}
+.equipment_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -806,6 +845,7 @@ header {
     background: #F6F7FA;
     cursor: pointer;  
     padding: 0 30px;  
+    transition: all .4s;
 }
 .upload-file__text {
     font-family: var(--font_family);
@@ -819,12 +859,26 @@ header {
     text-align: center;
     display: block;
     margin-left: 6px;
+    transition: all .4s;
 }
 .estimate .form-data .submit_btn {
     width: 350px;
 }
-
-
+.upload-file__label .icon {
+    display: block;
+    width: 23px;
+    height: 24px;
+    fill: var(--color2);
+}
+.upload-file__label:hover {
+    border: 2px dashed var(--color1);
+}
+.upload-file__label:hover .upload-file__text {
+    color: var(--color1);
+}
+.upload-file__label:hover .icon {
+    fill: var(--color1);
+}
 
 
 
@@ -840,6 +894,7 @@ header {
 .construction_item {
     text-decoration: none;
     position: relative;
+    width: calc(100%/2 - 15px);
 }
 .construction_item.hide {
     display: none;
@@ -876,6 +931,17 @@ header {
 }
 .construction_item-img {
     position: relative;
+    overflow: hidden;
+    padding-bottom: 76.63%;
+}
+.construction_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .link-more {
     display: inline-block;
@@ -918,6 +984,9 @@ header {
 .construction_item-view img {
     width: 24px;
     height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .construction_item:hover .construction_item-view {
     opacity: 1;
@@ -1022,6 +1091,11 @@ header {
     left: calc(50% - 270px);
     bottom: -30px;
 }
+.production_slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .production ul {
     margin-top: 30px;
 }
@@ -1075,10 +1149,14 @@ header {
     text-decoration: none;
 }
 .quality_item-img {
-    width: 200px;
-    height: 200px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
 }
 .quality_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -1101,7 +1179,8 @@ header {
     line-height: 1.57; 
     color: var(--color1);
     display: flex;
-    align-items: center;    
+    align-items: center; 
+    transition: all .4s;   
 }
 .quality_item-link .icon {
     display: block;
@@ -1109,6 +1188,13 @@ header {
     stroke: var(--color1);
     width: 20px;
     height: 7px;
+    transition: all .4s;
+}
+.quality_item:hover .quality_item-link {
+    color: var(--color2);
+}
+.quality_item:hover .quality_item-link .icon {
+    stroke: var(--color2);
 }
 
 
@@ -1194,10 +1280,15 @@ ul {
     margin-bottom: 30px;
 }
 .accessories_item-img {
-    width: 277px;
-    height: 220px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 79.42%;
 }
 .accessories_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1259,6 +1350,20 @@ ul {
     margin-top: 15px;
     text-align: center;
 }
+.colers_item-img {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+.colers_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -1270,7 +1375,7 @@ ul {
     flex-wrap: wrap;
 }
 .windows_items > * {
-    padding: 49px 20px 49px 20px;
+    padding: 49px;
     width: calc(100%/4);
     text-align: center;
     border-right: 2px solid #CFD1D8;
@@ -1285,6 +1390,20 @@ ul {
     font-weight: 700;
     line-height: 1.44;
     margin-top: 10px; 
+}
+.windows_item-img {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60%;
+}
+.windows_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -1387,6 +1506,11 @@ ul {
     height: 60px;
     background: var(--color1);
     z-index: 1;
+    transition: all .4s;
+}
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    background: var(--color2);
 }
 .swiper-button-prev {
     left: 20px;
@@ -1420,7 +1544,7 @@ ul {
 }
 .swiper-pagination-bullet:hover {
     box-shadow: none;
-    background: var(--color1);
+    background: var(--color2);
 }
 .swiper-pagination-bullet + .swiper-pagination-bullet {
     margin-left: 10px !important;

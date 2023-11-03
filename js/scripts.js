@@ -64,10 +64,7 @@ $(() => {
 	})
 
 
-	function handleFiles(file) {
-		const fileList = file;
-		$(".upload-file__text").text(fileList[0]["name"]);
-	}
+
 
 
 	// Ширина окна для ресайза
@@ -166,3 +163,10 @@ $(() => {
 
 
 })
+
+
+
+function handleFiles(file) {
+	const fileList = file;
+	$(".upload-file__text").text(fileList[0]["name"]);
+}
