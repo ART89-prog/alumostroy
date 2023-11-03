@@ -105,12 +105,14 @@ input[type=number] {
     Global styles
 -------------------*/
 :root {
-    --bg: #BE8D55;
+    --bg: #ECEFF4;
     --scroll_width: 17px;
     --text_color: #363636;
     --font_size: 14px;
     --font_size_title: 28px;
     --font_family: 'Wix Madefor Display', sans-serif;
+    --color1: #0042EC;
+    --color2: #FF5430;
 }
 
 
@@ -341,10 +343,20 @@ header {
     text-decoration-line: underline;
     display: inline-flex;
     align-items: center;
+    transition: all .4s;
 }
-.header_mode a img {
+.header_mode a:hover {
+    color: var(--color2);
+}
+.header_mode a .icon {
     display: block;
     margin-left: 5px;
+    width: 20px;
+    height: 7px;
+    stroke: var(--color1);     
+}
+.header_mode a:hover .icon {
+    stroke: var(--color2);   
 }
 .header_contacts {
     text-align: end;
@@ -413,7 +425,7 @@ header {
     line-height: 110%; 
     padding: 20px 30px;
     color: #fff;
-    background: #0042EC;
+    background: var(--color1);
 }
 .first_section-price-left span {     
     font-size: 50px;
@@ -445,7 +457,7 @@ header {
     transform: translateY(-50%)
 }
 .first_section-price-right span {
-    color: #FF5430;
+    color: var(--color2);
 }
 .first_section-img {
     width: 418px;
@@ -489,7 +501,7 @@ header {
 
 
 .calculation {
-    background: #ECEFF4;
+    background: var(--bg);
 }
 .calculation_wrap {
     margin-top: -130px;
@@ -504,7 +516,7 @@ header {
     margin-bottom: 20px;
 }
 .calculation_title span {
-    color: #0042EC;
+    color: var(--color1);
 }
 .calculation_text {
     margin-bottom: 50px;
@@ -532,7 +544,7 @@ header {
 .form-data .line .input {
     width: 100%;
     height: 60px;
-    font-family: "Wix Madefor Display";
+    font-family: var(--font_family);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -547,10 +559,10 @@ header {
     color: #7D7F84;
 }
 .form-data .submit_btn {
-    width: 375x;
+    width: 375px;
     height: 60px;
-    background: #0042EC;
-    font-family: "Wix Madefor Display";
+    background: var(--color1);
+    font-family: var(--font_family);
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -561,7 +573,11 @@ header {
     padding: 10px 30px;
     border: none;
     cursor: pointer;
+    transition: all .4s;
 } 
+.form-data .submit_btn:hover {
+    background: var(--color2);
+}
 .form_politic {
     font-size: 13px;
     font-style: normal;
@@ -573,6 +589,10 @@ header {
 .form_politic a {
     color: inherit;
     text-decoration-line: underline;
+    transition: all .4s;
+}
+.form_politic a:hover {
+    color: var(--color2);
 }
 
 
@@ -597,10 +617,10 @@ header {
     height: 100%;
     left: 0;
     top: 0;
-    background: #0042EC;
+    background: var(--color1);
 }
 .gallery {
-    background: #ECEFF4;
+    background: var(--bg);
 }
 .gallery_wrap {
     display: flex;
@@ -637,10 +657,31 @@ header {
     object-fit: cover;
 }
 .gallery_item:hover span {
-    background: #0042EC;
+    background: var(--color1);
 }
 .gallery_item:hover {
-    border: 6px solid #0042EC;
+    border: 6px solid var(--color1);
+}
+.gallery_item-view {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0042EC;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+}
+.gallery_item-view img {
+    width: 24px;
+    height: 24px;
+}
+.gallery_item:hover .gallery_item-view {
+    opacity: 1;
 }
 
 
@@ -667,7 +708,7 @@ header {
     color: #ffffff;
 }
 .development_title span {
-    color: #FF5430;
+    color: var(--color2);
 }
 .development_text {
     font-size: 16px;
@@ -737,10 +778,10 @@ header {
 }
 .estimate_wrap {
     padding: 120px 145px;
-    background: #ECEFF4;
+    background: var(--bg);
 }
 .estimate_title span {
-    color: #0042EC;
+    color: var(--color1);
 }
 .estimate .line2 {
     margin-bottom: 30px;
@@ -774,7 +815,7 @@ header {
     line-height: 150%; 
     letter-spacing: 0.48px;
     text-transform: uppercase;
-    color: #FF5430;
+    color: var(--color2);
     text-align: center;
     display: block;
     margin-left: 6px;
@@ -795,6 +836,7 @@ header {
 }
 .construction_item {
     text-decoration: none;
+    position: relative;
 }
 .construction_item.hide {
     display: none;
@@ -815,17 +857,20 @@ header {
     line-height: 1.57; 
 }
 .construction_item-link {
-    color: #0042EC;
+    color: var(--color1);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.57; 
 }
+.construction_item-img {
+    position: relative;
+}
 .link-more {
     display: inline-block;
     width: 400px;
     height: 60px;
-    background: #0042EC;
+    background: var(--color1);
     text-decoration: none;
     margin: 60px auto 0;
     transition: all .4s;
@@ -837,9 +882,34 @@ header {
     letter-spacing: 0.42px;
     text-transform: uppercase;
     text-align: center;
+    transition: all .4s;
 }
 .link-more.active {
     display: none;
+}
+.link-more:hover {
+    background: var(--color2);
+}
+.construction_item-view {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0042EC;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+}
+.construction_item-view img {
+    width: 24px;
+    height: 24px;
+}
+.construction_item:hover .construction_item-view {
+    opacity: 1;
 }
 
 
@@ -855,7 +925,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 100px;
-    background: #ECEFF4;
+    background: var(--bg);
 }
 .demonstration_info {
     width: calc(100% - 474px);
@@ -871,7 +941,7 @@ header {
     line-height: 1.21;
 }
 .demonstration_text span {
-    color: #0042EC;
+    color: var(--color1);
 }
 .demonstration_images {
     display: flex;
@@ -1004,7 +1074,7 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 1.57; 
-    color: #0042EC;
+    color: var(--color1);
     display: flex;
     align-items: center;    
 }
@@ -1136,7 +1206,7 @@ ul {
     max-width: 363px;
 }
 .colers_title span {
-    color: #FF5430;
+    color: var(--color2);
 }
 .colers_items {
     width: calc(100% - 430px);
@@ -1198,7 +1268,7 @@ ul {
 }
 .proposal_wrap {
     padding: 120px 145px;
-    background: #ECEFF4;
+    background: var(--bg);
 }
 .proposal_box {
     display: flex;
@@ -1330,13 +1400,13 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 125px;
-    background: #ECEFF4;
+    background: var(--bg);
 }
 .contract_title {
     margin-bottom: 30px;
 }
 .contract_text {
-    color: #0042EC;
+    color: var(--color1);
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
