@@ -909,9 +909,9 @@
 			<section class="reviews block">
 				<div class="cont">
 					<h2 class="reviews_title title-center">Отзывы наших клиентов</h2>
-					<div class="swiper-container">
+					<div class="swiper">
 						<div class="swiper-wrapper">
-							<div class="slide swiper-slide">
+							<div class="swiper-slide">
 								<div class="reviews_wrap">
 									<div class="reviews_img">
 										<img src="images/reviews1.png" alt="">	
@@ -930,7 +930,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="slide swiper-slide">
+							<div class="swiper-slide">
 								<div class="reviews_wrap">
 									<div class="reviews_img">
 										<img src="images/reviews1.png" alt="">	
@@ -949,7 +949,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="slide swiper-slide">
+							<div class="swiper-slide">
 								<div class="reviews_wrap">
 									<div class="reviews_img">
 										<img src="images/reviews1.png" alt="">	
@@ -967,18 +967,17 @@
 										<div class="reviews_text">Писать отзывы не моё, но не могу не отметить что работать с вашей компанией мне нравится. Поэтому обращаюсь не первый раз и планирую в дальнейшем сотрудничать. Работа проводится качественно, в срок и с пониманием дела! Все возникающие вопросы решаются оперативно и в пользу клиента! К тому же отзывчивые и терпеливые сотрудники, что немаловажно. Советую знакомым</div>
 									</div>
 								</div>
-							</div>					
-						</div>	
-
+							</div>
+						</div>
 						<div class="swiper-pagination"></div>
-
+					
 						<div class="swiper-button-prev">
 							<img src="images/prev.svg" alt="">
 						</div>
 						<div class="swiper-button-next">
 							<img src="images/next.svg" alt="">
-						</div>
-					</div>		
+						</div>	
+					</div>
 				</div>
 			</section>
 
@@ -1173,6 +1172,41 @@
 							<span>Покрасим изделия в 213 цветов по шкале RAL стандартной, матовой и порошковой краской (Муар)</span>
 						</li> 
 					</ul>
+					<div class="example">
+						<div class="example_title">При изготовлении алюминиевых оконных конструкций используем профиль:</div>
+						<div class="example_items">
+							<div class="example_item">
+								<div class="example_item-img">
+									<img src="images/quality1.png " alt="">
+								</div>
+								<div class="example_item-title">Alumark s44</div>
+							</div>
+							<div class="example_item">
+								<div class="example_item-img">
+									<img src="images/quality2.png " alt="">
+								</div>
+								<div class="example_item-title">Alumark s50</div>
+							</div>
+							<div class="example_item">
+								<div class="example_item-img">
+									<img src="images/quality3.png " alt="">
+								</div>
+								<div class="example_item-title">Alumark s70</div>
+							</div>
+							<div class="example_item">
+								<div class="example_item-img">
+									<img src="images/quality5.png " alt="">
+								</div>
+								<div class="example_item-title">Alutech alt w62</div>
+							</div>
+							<div class="example_item">
+								<div class="example_item-img">
+									<img src="images/quality6.png " alt="">
+								</div>
+								<div class="example_item-title">Alutech alt w72</div>
+							</div>
+						</div>	
+					</div>	
 				</div>
 				<div class="modal_right">
 					<div class="modal_right-text">Примеры установленных нами алюминиевых окон</div>
@@ -1199,8 +1233,35 @@
 							<img src="images/next.svg" alt="">
 						</div>
 					</div>	
+					<div class="modal_description">
+						<div class="modal-icon">
+							<svg class="icon"><use xlink:href="images/sprite.svg#modal_icon4"></use></svg>
+						</div>	
+						<div class="modal_description-text">Так же изготавливаем противопожарные конструкции: <b>E15, E30, E60, EIW15, EIW30, EIW60</b></div>
+					</div>
 				</div>
-				
+			</div>
+			</div>
+			<div class="modal_bottom">
+				<div class="modal_bottom-title">Бесплатно сделаем предварительный расчёт стоимости по вашим замерам и сохраним за вами эту цену!</div>
+				<div class="modal_bottom-text">Если наши замеры на вашем объекте не будут сильно отличаться от того, что прислали вы, то цена после предварительного расчёта останется неизменной</div>
+				<form class="form" id="feedback-form-5">
+					<div class="form-data">
+						<div class="line">
+							<div class="field">
+								<input type="text" name="name" value="" class="input required" required placeholder="Ваше имя">
+							</div>
+							<div class="field">
+								<input type="tel" name="phone" value="" class="input required" required placeholder="Ваш телефон">
+							</div>                 
+						</div>                    
+						<button type="submit" class="submit_btn">
+							<span>Рассчитать стоимость</span>
+						</button>
+					</div>  
+					<input type="hidden" name="title" value="Консультация">
+					<div class="form_politic">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></div>
+				</form>
 			</div>
 		</section>
 

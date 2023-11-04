@@ -1,15 +1,29 @@
 $(() => {
 
 
-	if ($('.production .swiper').length) {
-		new Swiper('.production .swiper', {
+	const productionSliders = [],
+		production = document.querySelectorAll('.production .swiper')
+
+	production.forEach(function (el, i) {
+		el.classList.add('production_s' + i)
+
+		let options = {
 			loop: true,
-			speed: 750,
-			watchSlidesVisibility: true,
+			speed: 500,
+			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			spaceBetween: 20,
-			slidesPerView: 1,
+			preloadImages: false,
+			breakpoints: {
+				0: {
+					spaceBetween: 20,
+					slidesPerView: 1.12
+				},
+				768: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				}
+			},
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'bullets',
@@ -19,20 +33,37 @@ $(() => {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			}
-		})
-	}
+		}
+
+		productionSliders.push(new Swiper('.production_s' + i, options))
+	})
 
 
 
-	if ($('.reviews .swiper-container').length) {
-		new Swiper('.reviews .swiper-container', {
+
+	const reviewsSliders = [],
+		reviews = document.querySelectorAll('.reviews .swiper')
+
+	reviews.forEach(function (el, i) {
+		el.classList.add('reviews_s' + i)
+
+		let options = {
 			loop: true,
-			speed: 750,
-			watchSlidesVisibility: true,
+			speed: 500,
+			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			spaceBetween: 20,
-			slidesPerView: 1,
+			preloadImages: false,
+			breakpoints: {
+				0: {
+					spaceBetween: 20,
+					slidesPerView: 1.12
+				},
+				768: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				}
+			},
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'bullets',
@@ -42,19 +73,36 @@ $(() => {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			}
-		})
-	}
+		}
+
+		reviewsSliders.push(new Swiper('.reviews_s' + i, options))
+	})
 
 
-	if ($('.modal_slider .swiper').length) {
-		new Swiper('.modal_slider .swiper', {
+
+	const modalSliders = [],
+		modal = document.querySelectorAll('.modal .swiper')
+
+	modal.forEach(function (el, i) {
+		el.classList.add('modal_s' + i)
+
+		let options = {
 			loop: true,
-			speed: 750,
-			watchSlidesVisibility: true,
+			speed: 500,
+			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			spaceBetween: 20,
-			slidesPerView: 1,
+			preloadImages: false,
+			breakpoints: {
+				0: {
+					spaceBetween: 20,
+					slidesPerView: 1.12
+				},
+				768: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				}
+			},
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'bullets',
@@ -64,12 +112,14 @@ $(() => {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			}
-		})
-	}
+		}
+
+		modalSliders.push(new Swiper('.modal_s' + i, options))
+	})
 
 
 
-
+	
 	// Табы
 	var locationHash = window.location.hash
 

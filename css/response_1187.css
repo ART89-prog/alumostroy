@@ -146,7 +146,15 @@
     .contacts {
         border-top: 2px solid #CFD1D8;    
     }
-
+    .production_text {
+        font-size: 18px;
+    }
+    .production ul li + li {
+        margin-top: 30px;
+    }
+    .production ul li {
+        font-size: 18px;
+    }
 
 
 

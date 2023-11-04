@@ -120,7 +120,7 @@
         width: calc(100% - 340px);
     }
     .quality_wrap {
-        padding: 120px 0px 60px;
+        padding: 60px 0px 60px;
     }
     .application {
         padding-bottom: 60px;
@@ -249,6 +249,18 @@
     }
     footer .header_mode {
         margin-left: 100px;
+    }
+    .production_wrap {
+        flex-direction: column;
+    }
+    .production ul {
+        column-count: 2;
+    }
+    .production_text {
+        font-size: 16px;
+    }
+    .production ul li {
+        font-size: 16px;
     }
 
 
