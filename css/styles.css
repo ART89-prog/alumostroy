@@ -1807,9 +1807,54 @@ footer .header_mode {
 
 
 
-
 .modal {
     display: none;
+    max-width: 1110px;
+    padding: 52px 65px 60px !important;
+}
+.modal {
+}
+.modal_top {
+    display: flex;
+    gap: 90px;
+}
+.modal_info {
+}
+.modal_title {
+}
+.title_start {
+}
+.modal-icon {
+    width: 28px;
+    height: 28px;
+}
+.icon {
+}
+.modal_right {
+   width: 50%; 
+}
+.modal_slider {
+    
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide img {
+    width: 100%;
+}
+.modal ul li {
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.modal ul li + li {
+    margin-top: 24px;
+}
+.modal-icon {
+    margin-right: 14px;
 }
 
 
@@ -1981,4 +2026,14 @@ footer .header_mode {
 
 .modal_example {
     display: none;
+}
+
+
+
+
+
+.modal_little {
+    display: none;
+    max-width: 400px;
+    padding: 50px 40px 40px;
 }
