@@ -370,6 +370,9 @@ header {
     text-decoration: none;
     color: inherit;
 }
+.header_contacts-mob {
+    display: none;
+}
 .header_contacts-text {
     font-size: 13px;
     font-style: normal;
