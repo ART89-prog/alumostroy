@@ -410,6 +410,7 @@ header {
     font-weight: 800;
     line-height: 108.696%;
     margin-bottom: 40px;
+    max-width: 636px;
 }
 .first_section-title span {
     font-weight: 400;
@@ -462,7 +463,8 @@ header {
 }
 .first_section-img {
     width: 418px;
-    height: 618px;    
+    height: 618px; 
+    margin-top: -240px;   
 }
 .first_section-img img {
     object-fit: cover;
@@ -646,9 +648,6 @@ header {
     text-decoration: none;
     border: 6px solid transparent;
     transition: all .2s;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 19.75%;
     cursor: pointer;
 }
 .gallery_item span {
@@ -664,6 +663,11 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
+}
+.gallery_img {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 77.85%;
 }
 .gallery_item img {
     position: absolute;
