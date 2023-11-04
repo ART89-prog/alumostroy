@@ -280,6 +280,34 @@
         margin: 20px auto 0;
         text-align: center;
     }
+    .tabs {
+        white-space: nowrap;
+        overflow: auto;
+        flex-wrap: nowrap;
+        font-size: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 20px;
+    }
+    .tabs button.active {
+        border-bottom: 2px solid var(--color1);
+    }
+    .tabs::-webkit-scrollbar {
+        width: 0; 
+    }
+    .tabs { 
+        -ms-overflow-style: none; 
+    }
+    .tabs { 
+        overflow: -moz-scrollbars-none; 
+    }
+    .modal_profil-wrap {
+        padding: 50px 14px 40px 14px;
+    }
+    .modal_profil-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
 
 
 

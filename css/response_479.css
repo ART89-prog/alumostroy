@@ -64,7 +64,13 @@
     .director_photo img {
         width: 100%;
     }
-
+    .modal_profil-img {
+        width: 100%;
+        height: auto;
+    }
+    .tabs {
+        margin-bottom: 10px;
+    }
 
 
 

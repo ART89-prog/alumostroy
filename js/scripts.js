@@ -70,9 +70,40 @@ $(() => {
 
 
 
+	// Табы
+	var locationHash = window.location.hash
 
+	$('body').on('click', '.tabs button', function (e) {
+		e.preventDefault()
 
+		if (!$(this).hasClass('active')) {
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
 
+			$parent.find('.tabs:first button').removeClass('active')
+			$parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			$activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
+			$activeTabContent = $(locationHash),
+			$parent = $activeTab.closest('.tabs_container'),
+			level = $activeTab.data('level')
+
+		$parent.find('.tabs:first button').removeClass('active')
+		$parent.find('.tab_content.' + level).removeClass('active')
+
+		$activeTab.addClass('active')
+		$activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
+	}
 
 
 
@@ -137,24 +168,6 @@ $(() => {
 
 
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
-
-
-	// Аккордион
-	$('body').on('click', '.accordion .accordion_item .head', function (e) {
-		e.preventDefault()
-
-		const $item = $(this).closest('.accordion_item'),
-			$accordion = $(this).closest('.accordion')
-
-		if ($item.hasClass('active')) {
-			$item.removeClass('active').find('.data').slideUp(400)
-		} else {
-			$accordion.find('.accordion_item').removeClass('active')
-			$accordion.find('.data').slideUp(400)
-
-			$item.addClass('active').find('.data').slideDown(400)
-		}
-	})
 
 
 
