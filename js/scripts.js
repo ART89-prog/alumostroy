@@ -117,9 +117,48 @@ $(() => {
 		modalSliders.push(new Swiper('.modal_s' + i, options))
 	})
 
-
-
 	
+
+	const modal2Sliders = [],
+		modal2 = document.querySelectorAll('.modal_example .swiper')
+
+	modal2.forEach(function (el, i) {
+		el.classList.add('modal2_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			preloadImages: false,
+			breakpoints: {
+				0: {
+					spaceBetween: 20,
+					slidesPerView: 1.12
+				},
+				768: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				}
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		}
+
+		modal2Sliders.push(new Swiper('.modal2_s' + i, options))
+	})
+
+
+
+
 	// Табы
 	var locationHash = window.location.hash
 

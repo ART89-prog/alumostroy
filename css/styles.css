@@ -2135,8 +2135,13 @@ footer .header_mode {
 
 .modal_example {
     display: none;
+    max-width: 1110px;
+    width: 100%;
+    padding: 52px 20px 40px;
 }
-
+.modal_example .swiper {
+    width: 60%;
+}
 
 
 
