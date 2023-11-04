@@ -1152,12 +1152,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-left: -30px;
+    margin-bottom: -30px;
 }
 .quality_items > * {
     width: calc(100%/4 - 30px);
     margin-left: 30px;
-    margin-left: 30px;
+    margin-bottom: 30px;
     text-decoration: none;
 }
 .quality_item-img {
@@ -1495,6 +1495,7 @@ ul {
     width: 80px;
     height: 80px;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 .reviews_photo img {
     object-fit: cover;
@@ -1669,6 +1670,9 @@ ul {
     line-height: 1.5; 
     display: flex;
     align-items: flex-start;
+}
+.director ul li span b {
+    color: var(--color1);
 }
 .director ul li img {
     display: block;

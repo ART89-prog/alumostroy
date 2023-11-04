@@ -42,7 +42,7 @@
         margin-bottom: 40px;
     }
     .block {
-        padding: 85px 0;
+        padding: 60px 0;
     }
     .gallery_wrap {
         margin-left: -20px;
@@ -53,7 +53,203 @@
         margin-left: 20px;
         margin-bottom: 20px;
     }
-
+    .development {
+        padding: 60px 0;
+    }
+    .development_wrap {
+        position: relative;
+    }
+    .development_img {
+        width: 270px;
+        height: 279px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .development_title {
+        width: calc(100% - 300px);
+    } 
+    .development_text {
+        width: calc(100% - 300px);
+    }
+    .development .form-data .line {
+        justify-content: space-between;
+    }
+    .development .form-data .line .field {
+        width: calc(50% - 10px);
+    }
+    .development .form-data .line .field:first-child {
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+    .development form {
+        z-index: 4;
+        position: relative;
+    }
+    .estimate_wrap {
+        padding: 60px 20px;
+    }
+    .estimate_title {
+        margin-bottom: 30px;
+    }
+    .demonstration_img:nth-child(1) {
+        width: 139px;
+        height: 139px;
+    }
+    .demonstration_img:nth-child(2) {
+        width: 112px;
+        height: 112px;
+    }
+    .demonstration_img:nth-child(3) {
+        width: 117px;
+        height: 117px;
+    }
+    .demonstration_img:nth-child(4) {
+        width: 173px;
+        height: 173px;
+    }
+    .demonstration_images {
+        width: 320px;
+        gap: 8px;
+    }
+    .demonstration_wrap {
+        padding: 60px 20px 90px 20px;
+        gap: 20px;
+    }
+    .demonstration_info {
+        width: calc(100% - 340px);
+    }
+    .quality_wrap {
+        padding: 120px 0px 60px;
+    }
+    .application {
+        padding-bottom: 60px;
+    }
+    .application:before {
+        display: none;
+    }
+    .application_wrap {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .application_right {
+        display: flex;
+    }
+    .application_right-box:nth-child(2) {
+        padding-top: 0px;
+        padding-left: 40px;
+        width: 49%;
+    }
+    .application_right-box:nth-child(1) {
+        padding-bottom: 0px;
+        padding-right: 40px;
+        border-bottom: none;
+        border-right: 2px solid #CFD1D8;
+        width: 49%;
+    }
+    .accessories {
+        padding-top: 74px 0 60px;
+    }
+    .accessories_title {
+        margin-bottom: 40px;
+    }
+    .accessories_item-logo img {
+        width: auto;
+    }
+    .accessories_item-logo {
+        margin-top: 20px;
+    }
+    .colers_items {
+        width: 100%;
+        margin: 0;
+        margin-left: -15px;
+        margin-bottom: -30px;
+    }
+    .colers {
+        padding: 60px 0;
+    }
+    .colers_wrap {
+        gap: 30px;
+    }
+    .windows_items > * {
+        padding: 13px;
+    }
+    .windows_item-title {
+        font-size: 16px;
+    }
+    .proposal_wrap {
+        padding: 74px 20px 60px;
+    }
+    .proposal_box {
+        flex-direction: column;
+    }
+    .proposal .line .field {
+        width: 49%;
+    }
+    .proposal .line {
+        flex-direction: row;
+    }
+    .proposal .form {
+        width: 100%;
+    }
+    .reviews_wrap {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .reviews_img img {
+        width: 100%;
+    }
+    .reviews .swiper-button-prev,
+    .reviews .swiper-button-next {
+        display: none;
+    }
+    .reviews {
+        padding-bottom: 100px;
+    }
+    .certificate_wrap {
+        padding: 51px 20px;
+        gap: 24px;
+    }
+    .contract-wrap {
+        padding: 51px 20px;
+        gap: 24px;
+    }
+    .contract_text {
+        font-size: 22px;
+    }
+    .director_wrap {
+        padding: 60px 20px;
+    }
+    .director ul {
+        gap: 30px;
+    }
+    .director_box {
+        gap: 30px;
+    }
+    .director_bottom_text {
+        font-size: 16px;
+    }
+    .contacts_items {
+        position: relative;
+        box-shadow: 0px 13px 30px 0px rgba(0, 0, 0, 0.29);
+        width: 80%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        columns: 2;
+        padding: 40px;
+    }
+    .contacts_title {
+        font-size: 16px;
+    }
+    .contacts {
+        border-top: none;
+        padding-top: 0;
+    }
+    footer .header_mode {
+        margin-left: 100px;
+    }
 
 
 
