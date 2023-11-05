@@ -397,11 +397,20 @@ header {
 .first_section:before {
     position: absolute;
     content: "";
-    background: url(../images/square.png);
-    width: 249px;
-    height: 249px;
-    bottom: -130px;
+    background: #fff;
+    width: 149px;
+    height: 149px;
+    bottom: -60px;
     right: 20px;
+}
+.first_section:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 67px;
+    height: 67px;
+    bottom: -165px;
+    right: 190px;
 }
 .first_section-wrap {
     display: flex;
@@ -436,6 +445,8 @@ header {
     padding: 20px 23px;
     color: #fff;
     background: var(--color1);
+    display: flex;
+    align-items: center;
 }
 .first_section-price-left span {     
     font-size: 50px;
@@ -1113,7 +1124,7 @@ header {
     left: calc(50% - 270px);
     bottom: -30px;
 }
-.production_slider .slide img {
+.production_slider .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1246,6 +1257,7 @@ header {
 
 .application {
     position: relative;
+    z-index: 2;
 }
 .application.block {
     padding-bottom: 0;
@@ -1253,11 +1265,21 @@ header {
 .application:before {
     position: absolute;
     content: "";
-    background: url(../images/square2.svg);
-    width: 249px;
-    height: 249px;
+    background: #ECEFF4;
+    width: 149px;
+    height: 149px;
     top: 120px;
     right: 20px;
+}
+.application:after {
+    position: absolute;
+    content: "";
+    background: #ECEFF4;
+    width: 67px;
+    height: 67px;
+    top: 310px;
+    right: 190px;
+    z-index: -1;
 }
 .application_wrap {
     display: flex;
@@ -1859,7 +1881,7 @@ footer .header_mode {
     display: none;
     max-width: 1110px;
     width: 100%;
-    padding: 52px 65px 0px !important;
+    padding: 52px 65px 60px !important;
     flex-direction: column;
 }
 .modal_top {
@@ -1982,11 +2004,20 @@ footer .header_mode {
     font-weight: 700;
 }
 .modal_bottom {
-    padding: 60px;
+    padding-top: 60px;
     background: #ECEFF4;
     margin-top: 40px;
-    margin-left: -60px;
-    margin-right: -60px;
+    position: relative;
+}
+.modal_bottom:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 130px);
+    height: calc(100% + 60px);
+    left: -65px;
+    bottom: -60px;
+    background: #ECEFF4;
+    z-index: -1;
 }
 .modal_bottom-title {
     font-size: 28px;
@@ -2221,6 +2252,11 @@ footer .header_mode {
     transition: opacity .2s linear, visibility .2s linear;
     pointer-events: none;
     opacity: 0;
+}
+.modal_example  .swiper-slide img {
+    width: 670px;
+    height: 406px;
+    object-fit: cover;
 }
 
 

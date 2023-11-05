@@ -64,7 +64,7 @@
         position: relative;
     }
     .calculation_wrap {
-        padding: 20px 0;
+        padding: 20px;
         margin-top: -135px;
     }
     .title {
@@ -393,7 +393,18 @@
     .modal_little-icon {
         margin: 0 auto 20px;
     }
-
+    .modal_bottom {
+        padding-top: 30px;
+    } 
+    .demonstration_images {
+        margin: 0 auto;
+    }
+    .upload-file__label {
+        height: 64px;
+    }
+    .form-data .submit_btn {
+        height: 60px;
+    }
 
 
 
