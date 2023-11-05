@@ -357,6 +357,41 @@
     .modal_example .swiper .swiper-button-next {
         display: none;
     }
+    .modal_right-text {
+        font-size: 14px;
+    }
+    .modal .swiper-button-prev,
+    .modal .swiper-button-next {
+        display: none;
+    }
+    .example_items > * {
+        width: calc(100%/3 - 20px);
+    }
+    .modal ul li {
+        font-size: 14px;
+    }
+    .example {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .example_title {
+        font-size: 16px;
+    }
+    .modal_bottom-title {
+        font-size: 16px;
+    }
+    .modal_bottom-text {
+        font-size: 14px;
+    }
+    .modal_little-title {
+        font-size: 16px;
+    }
+    .modal_little-text {
+        font-size: 14px;
+    }
+    .modal_little-icon {
+        margin: 0 auto 20px;
+    }
 
 
 

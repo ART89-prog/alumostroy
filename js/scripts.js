@@ -96,7 +96,7 @@ $(() => {
 			breakpoints: {
 				0: {
 					spaceBetween: 20,
-					slidesPerView: 1.12
+					slidesPerView: 1
 				},
 				768: {
 					spaceBetween: 0,

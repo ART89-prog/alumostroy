@@ -1151,7 +1151,6 @@ header {
 
 .quality_wrap {
     padding: 120px 95px;
-    border: 2px solid #CFD1D8;
 }
 .quality_box.pb120 {
     padding-bottom: 120px;
@@ -1830,6 +1829,7 @@ footer .header_mode {
 .modal {
     display: none;
     max-width: 1110px;
+    width: 100%;
     padding: 52px 65px 0px !important;
     flex-direction: column;
 }
@@ -1843,6 +1843,7 @@ footer .header_mode {
 }
 .modal_right {
    width: 50%; 
+   margin-top: -60px;
 }
 .swiper-slide img {
     width: 100%;
@@ -2179,4 +2180,22 @@ footer .header_mode {
     display: none;
     max-width: 400px;
     padding: 50px 40px 40px;
+}
+.modal_little-icon {
+    margin: 0 auto 30px;
+}
+.modal_little-title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.14; 
+    margin-bottom: 10px; 
+    text-align: center;
+}
+.modal_little-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
 }
