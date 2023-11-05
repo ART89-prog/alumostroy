@@ -1161,6 +1161,7 @@ header {
 
 .quality_wrap {
     padding: 120px 95px;
+    border: 2px solid #CFD1D8;
 }
 .quality_box.pb120 {
     padding-bottom: 120px;
@@ -1247,7 +1248,7 @@ header {
     position: relative;
 }
 .application.block {
-    padding-top: 0;
+    padding-bottom: 0;
 }
 .application:before {
     position: absolute;
@@ -1273,6 +1274,9 @@ ul {
     line-height: 1.5; 
     display: flex;
     align-items: flex-start;
+}
+.application_left ul li + li {
+    margin-top: 20px;
 }
 .application_left ul li img {
     display: block;
@@ -1640,7 +1644,15 @@ ul {
 .certificate_item {
     box-shadow: 0px 20px 50px 0px rgba(38, 61, 114, 0.21);
 }
-
+.certificate_item {
+    width: 324px;
+    height: 459px;
+    flex-shrink: 0;
+}
+.certificate_item img {
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -1667,6 +1679,13 @@ ul {
 }
 .contract_item {
     box-shadow: 0px 20px -1px 0px rgba(38, 61, 120, 0.21);
+    width: 324px;
+    height: 453px;
+    flex-shrink: 0;
+}
+.contract_item img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1855,8 +1874,15 @@ footer .header_mode {
    width: 50%; 
    margin-top: -60px;
 }
-.swiper-slide img {
+.modal .swiper-slide {
+    width: 480px;
+    height: 480px;
+}
+.modal .swiper-slide img {
     width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
 }
 .modal ul li {
     display: flex;
@@ -1890,7 +1916,7 @@ footer .header_mode {
 .modal .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .modal .swiper-pagination-custom, 
 .modal .swiper-pagination-fraction {
-    bottom: -20px;
+    bottom: -30px;
 }
 .example {
     padding: 30px;
@@ -2173,15 +2199,28 @@ footer .header_mode {
     line-height: 150%;
     margin-bottom: 20px;
 }
-.modal_example .swiper .swiper-slide {
-    opacity: 1;
-    visibility: visible;
-}
 .modal_example .swiper .swiper-button-prev {
     left: -20px;
 }
 .modal_example .swiper .swiper-button-next {
     right: -20px;
+}
+.modal_example .swiper-slide.visible {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.modal_example  .swiper-slide {
+    position: relative;
+    visibility: hidden;
+    width: auto;
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+    opacity: 0;
 }
 
 
