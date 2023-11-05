@@ -369,6 +369,10 @@ header {
     line-height: 116%;
     text-decoration: none;
     color: inherit;
+    transition: all .3s;
+}
+.header_contacts-phone:hover {
+    color: var(--color1);
 }
 .header_contacts-mob {
     display: none;
@@ -383,7 +387,7 @@ header {
 
 
 .first_section {
-    background: url(../images/first-section_bg.png);
+    background: url(../images/first-section_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -412,8 +416,9 @@ header {
     font-style: normal;
     font-weight: 800;
     line-height: 108.696%;
-    margin-bottom: 40px;
+    margin-bottom: 7px;
     max-width: 636px;
+    margin-top: 38px;
 }
 .first_section-title span {
     font-weight: 400;
@@ -428,7 +433,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 110%; 
-    padding: 20px 30px;
+    padding: 20px 23px;
     color: #fff;
     background: var(--color1);
 }
@@ -680,12 +685,16 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    outline: 6px solid transparent;
+    outline-offset: -6px;
+    transition: all .2s;
 }
 .gallery_item:hover span {
     background: var(--color1);
 }
-.gallery_item:hover {
-    border: 6px solid var(--color1);
+.gallery_item img:hover {
+    outline: 6px solid var(--color1);
+    outline-offset: -6px;
 }
 .gallery_item-view {
     opacity: 0;
@@ -884,6 +893,7 @@ header {
     width: 23px;
     height: 24px;
     fill: var(--color2);
+    transition: all .4s;
 }
 .upload-file__label:hover {
     border: 2px dashed var(--color1);
