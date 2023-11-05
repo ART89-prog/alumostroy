@@ -119,43 +119,37 @@ $(() => {
 
 	
 
-	const modal2Sliders = [],
-		modal2 = document.querySelectorAll('.modal_example .swiper')
 
-	modal2.forEach(function (el, i) {
-		el.classList.add('modal2_s' + i)
-
-		let options = {
+	if ($('.modal_example .swiper').length) {
+		new Swiper('.modal_example .swiper', {
 			loop: true,
-			speed: 500,
-			watchSlidesProgress: true,
+			speed: 750,
+			watchSlidesVisibility: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			preloadImages: false,
-			breakpoints: {
-				0: {
-					spaceBetween: 20,
-					slidesPerView: 1.12
-				},
-				768: {
-					spaceBetween: 0,
-					slidesPerView: 1
-				}
-			},
+			spaceBetween: 62,
+			slidesPerView: 1.1,
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'bullets',
 				clickable: true,
+			  },
+			  breakpoints: {
+				0: {
+					spaceBetween: 30,
+					slidesPerView: 1
+				},
+				1024: {
+					spaceBetween: 62,
+					slidesPerView: 1.2
+				}
 			},
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			}
-		}
-
-		modal2Sliders.push(new Swiper('.modal2_s' + i, options))
-	})
-
+		})
+	}
 
 
 

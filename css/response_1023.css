@@ -262,6 +262,15 @@
     .production ul li {
         font-size: 16px;
     }
+    .modal_example {
+        padding: 52px 15px 40px;
+    }
+    .modal_example-title {
+        font-size: 24px;
+    }
+    .modal_example-text {
+        font-size: 14px;
+    }
 
 
 

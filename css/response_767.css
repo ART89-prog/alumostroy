@@ -337,8 +337,26 @@
     .quality_wrap {
         padding: 40px 0px 40px;
     }
-
-
+    .modal_example-title {
+        font-size: 16px;
+    }
+    .modal_example .characteristic_item {
+        flex-direction: column;
+    }
+    .modal_example .swiper-horizontal>.swiper-pagination-bullets, 
+    .modal_example .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .modal_example .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: -20px;
+    }
+    .modal_example .characteristic {
+        margin-top: 37px;
+    }
+    .modal_example .swiper .swiper-button-prev {
+        display: none;
+    }
+    .modal_example .swiper .swiper-button-next {
+        display: none;
+    }
 
 
 
