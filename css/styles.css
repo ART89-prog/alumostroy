@@ -1150,6 +1150,15 @@ header {
     justify-content: center;
     height: auto;
 }
+.swiper-slide.active {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
 .swiper-slide {
     position: relative;
     visibility: hidden;
