@@ -319,6 +319,9 @@
         background: #ECEFF4;
         z-index: -1;
     }
+    .construction_item-img {
+        height: 260px;
+    }
 
   
     

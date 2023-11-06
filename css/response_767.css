@@ -192,6 +192,10 @@
     .colers {
         padding: 40px 0;
     }
+    .colers_item-img {
+        width: 70px;
+        height: 70px;
+    }
     .colers_item-title {
         font-size: 13px;
     }

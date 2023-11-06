@@ -684,14 +684,9 @@ header {
     line-height: 150%;
 }
 .gallery_img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 77.85%;
+    height: 225px;
 }
 .gallery_item img {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -703,7 +698,7 @@ header {
 .gallery_item:hover span {
     background: var(--color1);
 }
-.gallery_item img:hover {
+.gallery_item:hover img {
     outline: 6px solid var(--color1);
     outline-offset: -6px;
 }
@@ -727,6 +722,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: absolute;
 }
 .gallery_item:hover .gallery_item-view {
     opacity: 1;
@@ -829,14 +825,11 @@ header {
     line-height: 144.444%;
 }
 .equipment_item-img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 93.75%;
+    width: 160px;
+    height: 150px;
+    margin: 0 auto;
 }
 .equipment_item-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -970,13 +963,9 @@ header {
 }
 .construction_item-img {
     position: relative;
-    overflow: hidden;
-    padding-bottom: 76.63%;
+    height: 341px;
 }
 .construction_item-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -1026,6 +1015,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: absolute;
 }
 .construction_item:hover .construction_item-view {
     opacity: 1;
@@ -1440,14 +1430,11 @@ ul {
     text-align: center;
 }
 .colers_item-img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 100%;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
 }
 .colers_item-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -1481,14 +1468,11 @@ ul {
     margin-top: 10px; 
 }
 .windows_item-img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 60%;
+    width: 160px;
+    height: 96px;
+    margin: 0 auto;
 }
 .windows_item-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     width: 100%;
     height: 100%;
