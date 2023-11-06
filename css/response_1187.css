@@ -155,7 +155,18 @@
     .production ul li {
         font-size: 18px;
     }
-
+    .modal {
+        padding: 52px 30px 60px !important;
+    }
+    .modal_right {
+        width: 380px;
+    }
+    .modal .swiper-slide {
+        height: 380px;
+    }
+    .modal_top {
+        gap: 50px;
+    }
 
 
 

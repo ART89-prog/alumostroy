@@ -18,7 +18,8 @@
         font-size: 12px;
     }
     .first_section-price-left {
-        padding: 5px 16px;
+        padding: 12px 16px;
+        margin: auto;
     }
     .first_section-img {
         width: 254px;
@@ -321,6 +322,25 @@
     }
     .construction_item-img {
         height: 260px;
+    }
+    .modal_example .swiper-slide {
+        height: 320px;
+    }
+    .modal .swiper-slide {
+        height: 420px;
+    }
+    .modal_right {
+        width: 480px;
+        margin: 0 auto;
+    }
+    .modal .swiper-slide {
+        height: 480px;
+    }
+    .modal_top {
+        gap: 60px;
+    }
+    .first_section-price-left sup {
+        font-size: 18px;
     }
 
   

@@ -445,8 +445,6 @@ header {
     padding: 20px 23px;
     color: #fff;
     background: var(--color1);
-    display: flex;
-    align-items: center;
 }
 .first_section-price-left span {     
     font-size: 50px;
@@ -1978,14 +1976,9 @@ footer .header_mode {
     margin-bottom: 20px;
 }
 .example_item-img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 100%;
+    height: 90px;
 }
 .example_item-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -2219,7 +2212,7 @@ footer .header_mode {
     display: none;
     max-width: 1110px;
     width: 100%;
-    padding: 52px 216px 40px;
+    padding: 52px 100px 40px;
 }
 .modal_example .swiper {
     width: 100%;

@@ -409,7 +409,21 @@
     .form-data .submit_btn {
         height: 60px;
     }
-
+    .modal_example .swiper-slide {
+        height: 270px;
+    } 
+    .modal .swiper-slide {
+        height: 480px;
+    }
+    .modal_right {
+        width: 100%;
+    }
+    .modal .swiper-slide {
+        height: 480px;
+    }
+    .first_section-price-left sup {
+        font-size: 14px;
+    }
 
 
 
