@@ -408,6 +408,7 @@
     }
     .form-data .submit_btn {
         height: 60px;
+        padding: 10px 15px;
     }
     .modal_example .swiper-slide {
         height: 270px;
