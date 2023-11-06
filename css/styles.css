@@ -663,7 +663,6 @@ header {
     position: relative;
     display: block;
     text-decoration: none;
-    border: 6px solid transparent;
     transition: all .2s;
     cursor: pointer;
 }
