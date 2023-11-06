@@ -737,7 +737,7 @@ header {
 
 
 .development {
-    background: url(../images/development_bg.png);
+    background: url(../images/development_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1128,6 +1128,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 .production ul {
     margin-top: 30px;
@@ -1893,7 +1894,7 @@ footer .header_mode {
     height: 28px;
 }
 .modal_right {
-   width: 50%; 
+   width: 480px; 
    margin-top: -60px;
 }
 .modal .swiper-slide {
