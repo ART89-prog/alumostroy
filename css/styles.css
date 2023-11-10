@@ -1639,6 +1639,7 @@ ul {
 
 .certificate .cont {
     max-width: 1440px;
+
 }
 .certificate_wrap {
     padding: 54px 171px 54px 145px;
@@ -2231,7 +2232,7 @@ footer .header_mode {
     display: none;
     max-width: 1110px;
     width: 100%;
-    padding: 52px 100px 40px;
+    padding: 52px 220px 40px;
 }
 .modal_example .swiper {
     width: 100%;
@@ -2296,4 +2297,8 @@ footer .header_mode {
     font-weight: 400;
     line-height: 150%;
     text-align: center;
+}
+
+.carousel__viewport {
+    display: none !important;
 }

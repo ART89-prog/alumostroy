@@ -137,7 +137,7 @@ $(() => {
 					slidesPerView: 1
 				},
 				768: {
-					spaceBetween: 0,
+					spaceBetween: 30,
 					slidesPerView: 1
 				}
 			},
@@ -155,37 +155,6 @@ $(() => {
 		modal2Sliders.push(new Swiper('.modal2_s' + i, options))
 	})
 
-
-	// if ($('.modal_example .swiper').length) {
-	// 	new Swiper('.modal_example .swiper', {
-	// 		loop: true,
-	// 		speed: 750,
-	// 		watchSlidesVisibility: true,
-	// 		slideActiveClass: 'active',
-	// 		slideVisibleClass: 'visible',
-	// 		spaceBetween: 0,
-	// 		slidesPerView: 1,
-	// 		pagination: {
-	// 			el: '.swiper-pagination',
-	// 			type: 'bullets',
-	// 			clickable: true,
-	// 		  },
-	// 		  breakpoints: {
-	// 			0: {
-	// 				spaceBetween: 30,
-	// 				slidesPerView: 1
-	// 			},
-	// 			1024: {
-	// 				spaceBetween: 62,
-	// 				slidesPerView: 1.2
-	// 			}
-	// 		},
-	// 		navigation: {
-	// 			nextEl: '.swiper-button-next',
-	// 			prevEl: '.swiper-button-prev'
-	// 		}
-	// 	})
-	// }
 
 
 
