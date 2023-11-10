@@ -2213,6 +2213,17 @@ footer .header_mode {
     height: 100%;
     object-fit: cover;
 }
+.characteristic2 {
+    margin-top: 20px;
+}
+.characteristic_title {
+    color: #0042EC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;   
+    margin-bottom: 15px;
+}
 
 
 
