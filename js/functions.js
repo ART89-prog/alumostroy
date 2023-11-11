@@ -2,11 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Есть ли поддержка тач событий или это apple устройство
 	if (!is_touch_device() || !/(Mac|iPhone|iPod|MacIntel|iPad)/i.test(navigator.platform)) document.documentElement.classList.add('custom_scroll')
 
-
-
 	// Установка ширины стандартного скроллбара
 	document.documentElement.style.setProperty('--scroll_width', widthScroll() + 'px')
-
 
 	// Моб. версия
 	fakeResize = false

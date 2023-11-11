@@ -1,4 +1,50 @@
+// Ширина окна для ресайза
+WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
+BODY = document.getElementsByTagName('body')[0]
+OVERLAY = document.querySelector('.overlay')
+
 $(() => {
+
+	$("form").submit(function() {
+        // Получение ID формы
+        var formID = $(this).attr('id');
+        var formNm = document.getElementById(formID);
+        $.ajax({
+            type: "POST",
+            url: 'send.php',
+            data: new FormData(formNm),
+            processData: false,
+            contentType: false,
+            beforeSend: function() {
+                // Вывод текста в процессе отправки
+                //$(formNm).html('<p style="text-align:center">Отправка...</p>');
+            },
+            success: function(data) {
+                // Вывод текста результата отправки
+                //$(formNm).html('<p style="text-align:center">' + data + '</p>');
+
+
+               /* if(formID=="feedback-form-4")
+                {
+                    ym(82348417,'reachGoal','FORM1')
+                }*/
+                Fancybox.close()
+                Fancybox.show([{
+                    src: "#modal_little",
+                    type: 'inline'
+                }])
+                $('form').trigger("reset");              
+
+            },
+            error: function(jqXHR, text, error) {
+                // Вывод текста ошибки отправки
+                //$(formNm).html(error);
+            }
+        });
+        return false;
+    });
+
 
 
 	const productionSliders = [],
@@ -39,8 +85,6 @@ $(() => {
 	})
 
 
-
-
 	const reviewsSliders = [],
 		reviews = document.querySelectorAll('.reviews .swiper')
 
@@ -50,6 +94,7 @@ $(() => {
 		let options = {
 			loop: true,
 			speed: 500,
+			autoHeight: true,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
@@ -77,8 +122,6 @@ $(() => {
 
 		reviewsSliders.push(new Swiper('.reviews_s' + i, options))
 	})
-
-
 
 	const modalSliders = [],
 		modal = document.querySelectorAll('.modal .swiper')
@@ -133,7 +176,7 @@ $(() => {
 			centeredSlides: true,
 			preloadImages: false,
 			centeredSlides: true,
-			initialSlide: 1,
+			initialSlide: 3,
 			breakpoints: {
 				0: {
 					spaceBetween: 20,
@@ -152,6 +195,13 @@ $(() => {
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
+			},
+
+			on: {
+				init: function (swiper) {			       
+			        swiper.slideTo(swiper.slides.length - 1)		        
+
+			    },
 			}
 		}
 
@@ -159,13 +209,7 @@ $(() => {
 	})
 
 
-
-
-
-
-
 	// Табы
-	var locationHash = window.location.hash
 
 	$('body').on('click', '.tabs button', function (e) {
 		e.preventDefault()
@@ -183,24 +227,7 @@ $(() => {
 			$activeTabContent.addClass('active')
 		}
 	})
-
-	if (locationHash && $('.tabs_container').length) {
-		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
-			$activeTabContent = $(locationHash),
-			$parent = $activeTab.closest('.tabs_container'),
-			level = $activeTab.data('level')
-
-		$parent.find('.tabs:first button').removeClass('active')
-		$parent.find('.tab_content.' + level).removeClass('active')
-
-		$activeTab.addClass('active')
-		$activeTabContent.addClass('active')
-
-		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
-	}
-
-
-
+	
 
 	// Показать контент 
 	$(".link-more").click(function (e) {
@@ -219,28 +246,87 @@ $(() => {
 	})
 
 
+	$('body').on('click', '.modal_link', function(e) {
+        e.preventDefault()
+        Fancybox.close(true)
+        Fancybox.show([{
+            src: $(this).data('content'),
+            type: 'inline',
+        }], {
+            on: {
+                "done": (fancybox, eventName) => {
+                    modal2Sliders.forEach(function(el, i) {
+                        el.update();
+                    });
+                }
+            }
+        });
+    })
 
-
-
-	// Ширина окна для ресайза
-	WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
-	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
-	BODY = document.getElementsByTagName('body')[0]
-	OVERLAY = document.querySelector('.overlay')
-
-
-
-
-	$('body').on('click', '.modal_link', function (e) {
-		e.preventDefault()
-
-		Fancybox.close(true)
-		Fancybox.show([{
-			src: $(this).data('content'),
-			type: 'inline',
-		}]);
-	})
-
+    Fancybox.bind('[data-fancybox="gallery3"]', {
+        on: {
+            shouldClose: (fancybox, slide) => {            	
+                $("#"+fancybox.$container.id).remove();              
+                return false;
+            }
+        },
+    });
+    Fancybox.bind('[data-fancybox="gallery4"]', {
+        on: {
+            shouldClose: (fancybox, slide) => {            	
+                $("#"+fancybox.$container.id).remove();              
+                return false;
+            }
+        },
+    });
+    Fancybox.bind('[data-fancybox="gallery5"]', {
+        on: {
+            shouldClose: (fancybox, slide) => {            	
+                $("#"+fancybox.$container.id).remove();              
+                return false;
+            }
+        },
+    });
+    Fancybox.bind('[data-fancybox="gallery6"]', {
+        on: {
+            shouldClose: (fancybox, slide) => {            	
+                $("#"+fancybox.$container.id).remove();              
+                return false;
+            }
+        },
+    });
+    Fancybox.bind('[data-fancybox="gallery7"]', {
+        on: {
+            shouldClose: (fancybox, slide) => {            	
+                $("#"+fancybox.$container.id).remove();              
+                return false;
+            }
+        },
+    });
+    Fancybox.bind('[data-fancybox="gallery8"]', {
+        on: {
+            shouldClose: (fancybox, slide) => {            	
+                $("#"+fancybox.$container.id).remove();              
+                return false;
+            }
+        },
+    });
+    Fancybox.bind('[data-fancybox="gallery9"]', {
+        on: {
+            shouldClose: (fancybox, slide) => {            	
+                $("#"+fancybox.$container.id).remove();              
+                return false;
+            }
+        },
+    });
+    Fancybox.bind('[data-fancybox="gallery10"]', {
+        on: {
+            shouldClose: (fancybox, slide) => {            	
+                $("#"+fancybox.$container.id).remove();              
+                return false;
+            }
+        },
+    });
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
@@ -260,10 +346,7 @@ $(() => {
 		main: null
 	}
 
-
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
-
-
 
 
 	window.addEventListener('resize', function () {
@@ -272,7 +355,6 @@ $(() => {
 		let windowW = window.outerWidth
 
 		if (typeof WW !== 'undefined' && WW != windowW) {
-
 
 			// Перезапись ширины окна
 			WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
@@ -297,10 +379,7 @@ $(() => {
 		}
 	})
 
-
-
 })
-
 
 
 function handleFiles(file) {

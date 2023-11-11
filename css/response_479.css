@@ -1,91 +1,111 @@
-@media (max-width: 479px) {
-
-    .header_contacts-mob {
+@media (max-width: 479px)
+{
+    .header_contacts-mob
+    {
         display: block;
     }
-    .header_contacts {
+    .header_contacts
+    {
         display: none;
     }
-    .first_section-img {
+    .first_section-img
+    {
         width: 110px;
         height: 163px;
     }
-    .first_section-info ul li {
+    .first_section-info ul li
+    {
         line-height: 1.4;
     }
-    .first_section-price {
+    .first_section-price
+    {
         margin-bottom: 35px;
     }
-    .form-data .line {
+    .form-data .line
+    {
         flex-direction: column;
     }
-    .form-data .line .field:last-child {
+    .form-data .line .field:last-child
+    {
         margin-top: 20px;
     }
-    .gallery_wrap {
+    .gallery_wrap
+    {
         max-width: 267px;
         margin: 0 auto;
     }
-    .gallery_wrap > * {
+    .gallery_wrap > *
+    {
         width: 100%;
-        margin-left: 0px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
-    .gallery_item + .gallery_item {
+    .gallery_item + .gallery_item
+    {
         margin-top: 27px;
     }
-    .development .form-data .line .field {
+    .development .form-data .line .field
+    {
         width: 100%;
     }
-    .construction_item {
+    .construction_item
+    {
         width: 100%;
     }
-    .construction_item-title {
+    .construction_item-title
+    {
         margin-top: 15px;
     }
-    .accessories_item:nth-child(1) .accessories_item-logo img {
+    .accessories_item:nth-child(1) .accessories_item-logo img
+    {
         width: 102px;
         height: 30px;
     }
-    .accessories_item:nth-child(2) .accessories_item-logo img {
+    .accessories_item:nth-child(2) .accessories_item-logo img
+    {
         width: 66px;
         height: 30px;
     }
-    .accessories_item:nth-child(3) .accessories_item-logo img {
+    .accessories_item:nth-child(3) .accessories_item-logo img
+    {
         width: 177px;
         height: 30px;
     }
-    .proposal .form-data .line .field {
+    .proposal .form-data .line .field
+    {
         width: 100%;
     }
-    .proposal .form-data .line .field:last-child {
-        margin-top: 0px;
+    .proposal .form-data .line .field:last-child
+    {
+        margin-top: 0;
     }
-    .director_photo img {
+    .director_photo img
+    {
         width: 100%;
     }
-    .modal_profil-img {
+    .modal_profil-img
+    {
         width: 100%;
         height: auto;
     }
-    .tabs {
+    .tabs
+    {
         margin-bottom: 10px;
     }
-    .director_photo {
+    .director_photo
+    {
         width: 100%;
     }
-    .director_wrap {
+    .director_wrap
+    {
         padding: 40px 0;
     }
-    .modal_example .swiper-slide {
+    .modal_example .swiper-slide
+    {
         height: 210px;
-    } 
-    .modal .swiper-slide {
+    }
+    .modal .swiper-slide
+    {
         height: 346px;
     }
-
-
-
-
-
 }

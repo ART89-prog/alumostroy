@@ -1,181 +1,230 @@
-@media print, (max-width: 1187px) {
-
-    .first_section-title {
+@media print, (max-width: 1187px)
+{
+    .first_section-title
+    {
         font-size: 36px;
     }
-    .first_section-img {
+    .first_section-img
+    {
         width: 340px;
         height: 504px;
     }
-    .first_section-info {
+    .first_section-info
+    {
         max-width: 524px;
     }
-    .first_section-price-left {
+    .first_section-price-left
+    {
         font-size: 20px;
+
         padding: 20px;
     }
-    .first_section-price-left span {
+    .first_section-price-left span
+    {
         font-size: 36px;
     }
-    .first_section-price-right {
+    .first_section-price-right
+    {
         font-size: 14px;
-        padding: 10px 20px;
+
         display: flex;
-        justify-content: center;
         flex-direction: column;
+
+        padding: 10px 20px;
+
+        justify-content: center;
     }
-    .first_section-price {
+    .first_section-price
+    {
         margin-bottom: 40px;
     }
-    .calculation_wrap {
+    .calculation_wrap
+    {
         padding: 40px;
     }
+    .calculation .form-data .line
+    {
+        width: 100%;
+    }
+    .calculation .form-data .submit_btn
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .calculation .form-data
+    {
+        flex-wrap: wrap;
+    }
+    .title
+    {
+        font-size: 28px;
+    }
+    .title-center
+    {
+        font-size: 28px;
+    }
+    .title_start
+    {
+        font-size: 28px;
 
-    .calculation .form-data .line {
+        margin-bottom: 20px;
+    }
+    .gallery_wrap > *
+    {
+        width: calc(100%/3 - 30px);
+    }
+    .development .line
+    {
+        flex-wrap: wrap;
+    }
+    .development .form-data .line .field:first-child
+    {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .equipment_items
+    {
+        flex-wrap: wrap;
+    }
+    .equipment_items > *
+    {
+        width: calc(100%/3 - 30px);
+    }
+    .estimate .form-data .line
+    {
         width: 100%;
     }
-    .calculation .form-data .submit_btn {
+    .estimate .form-data .submit_btn
+    {
         width: 100%;
         margin-top: 20px;
     }
-    .calculation .form-data {
+    .estimate .form-data
+    {
         flex-wrap: wrap;
     }
-    .title {
-        font-size: 28px;
-    }
-    .title-center {
-        font-size: 28px;
-    }    
-    .title_start {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-    .gallery_wrap > * {
-        width: calc(100%/3 - 30px);
-    }
-    .development .line {
-        flex-wrap: wrap;
-    }
-    .development .form-data .line .field:first-child {
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-    .equipment_items {
-        flex-wrap: wrap;
-    }
-    .equipment_items > * {
-        width: calc(100%/3 - 30px);
-    }
-    .estimate .form-data .line {
-        width: 100%;
-    }
-    .estimate .form-data .submit_btn {
-        width: 100%;
-        margin-top: 20px;
-    }
-    .estimate .form-data {
-        flex-wrap: wrap;
-    }
-    .estimate_wrap {
+    .estimate_wrap
+    {
         padding: 120px 97px;
     }
-    .demonstration_wrap {
+    .demonstration_wrap
+    {
         padding: 48px;
     }
-    .demonstration_text {
+    .demonstration_text
+    {
         font-size: 18px;
     }
-    .quality_wrap {
-        padding: 120px 0px;
+    .quality_wrap
+    {
+        padding: 120px 0;
+
         border: none;
     }
-    .accessories_wrap {
-        padding: 0px;
+    .accessories_wrap
+    {
+        padding: 0;
+
         border: none;
     }
-    .accessories {
-        border-top: 2px solid #CFD1D8;
-        border-bottom: 2px solid #CFD1D8;
+    .accessories
+    {
         margin-bottom: 120px;
+
+        border-top: 2px solid #cfd1d8;
+        border-bottom: 2px solid #cfd1d8;
     }
-    .colers_wrap {
+    .colers_wrap
+    {
         flex-direction: column;
+
         gap: 60px;
     }
-    .colers_title {
-        max-width: 670px;
+    .colers_title
+    {
         display: block;
+
+        max-width: 670px;
         margin: 0 auto;
+
         text-align: center;
     }
-    .colers_items {
-        margin: 0 auto;
+    .colers_items
+    {
         width: calc(100% - 230px);
+        margin: 0 auto;
     }
-    .proposal_wrap {
+    .proposal_wrap
+    {
         padding: 120px 47px;
     }
-    .proposal_box {
+    .proposal_box
+    {
         gap: 30px;
     }
-    .certificate_wrap {
+    .certificate_wrap
+    {
         padding: 47px 75px;
+
         border: none;
-        border-top: 2px solid #CFD1D8;        
+        border-top: 2px solid #cfd1d8;
     }
-    .contract-wrap {
+    .contract-wrap
+    {
         padding: 47px 75px;
     }
-    .contract_text {
+    .contract_text
+    {
         font-size: 28px;
     }
-    .director_box {
+    .director_box
+    {
         gap: 50px;
     }
-    .director_wrap {
+    .director_wrap
+    {
         padding: 120px 47px;
+
         border: none;
     }
-    .director ul > * {
+    .director ul > *
+    {
         width: 100%;
     }
-    .director_bottom_text {
+    .director_bottom_text
+    {
         font-size: 20px;
     }
-    .contacts {
-        border-top: 2px solid #CFD1D8;    
+    .contacts
+    {
+        border-top: 2px solid #cfd1d8;
     }
-    .production_text {
+    .production_text
+    {
         font-size: 18px;
     }
-    .production ul li + li {
+    .production ul li + li
+    {
         margin-top: 30px;
     }
-    .production ul li {
+    .production ul li
+    {
         font-size: 18px;
     }
-    .modal {
+    .modal
+    {
         padding: 52px 30px 60px !important;
     }
-    .modal_right {
+    .modal_right
+    {
         width: 380px;
     }
-    .modal .swiper-slide {
+    .modal .swiper-slide
+    {
         height: 380px;
     }
-    .modal_top {
+    .modal_top
+    {
         gap: 50px;
     }
-
-
-
-
-
-
-
-
-
-
-
 }
