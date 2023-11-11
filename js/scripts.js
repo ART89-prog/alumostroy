@@ -130,7 +130,10 @@ $(() => {
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
+			centeredSlides: true,
 			preloadImages: false,
+			centeredSlides: true,
+			initialSlide: 1,
 			breakpoints: {
 				0: {
 					spaceBetween: 20,
@@ -138,7 +141,7 @@ $(() => {
 				},
 				768: {
 					spaceBetween: 30,
-					slidesPerView: 1
+					slidesPerView: 1.5
 				}
 			},
 			pagination: {
@@ -154,6 +157,9 @@ $(() => {
 
 		modal2Sliders.push(new Swiper('.modal2_s' + i, options))
 	})
+
+
+
 
 
 
@@ -250,8 +256,8 @@ $(() => {
 
 	Fancybox.defaults.template = {
 		closeButton: '<img src=images/close2.svg>',
-		// spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
-		// main: null
+		spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
+		main: null
 	}
 
 

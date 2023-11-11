@@ -1166,6 +1166,9 @@ header {
     transition: opacity .2s linear, visibility .2s linear;
     pointer-events: none;
     opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -2232,16 +2235,18 @@ footer .header_mode {
     display: none;
     max-width: 1110px;
     width: 100%;
-    padding: 52px 220px 40px;
+    padding: 52px 0px 40px;
 }
 .modal_example .swiper {
     width: 100%;
+    overflow: hidden !important;
 }
 .fancybox__slide {
     overflow-x: hidden;
 }
 .modal_example .characteristic {
-    margin-top: 66px;
+    max-width: 730px;
+    margin: 66px auto 0;
 }
 .modal_example-title {
     font-size: 28px;
@@ -2249,19 +2254,23 @@ footer .header_mode {
     font-weight: 800;
     line-height: 1.14; 
     margin-bottom: 10px;
+    margin: 0 auto 10px;
+    max-width: 730px;
 }
 .modal_example-text {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    margin-bottom: 20px;
+    max-width: 730px;
+    width: 100%;
+    margin: 0 auto 20px;
 }
 .modal_example .swiper .swiper-button-prev {
-    left: -20px;
+    left: 120px;
 }
 .modal_example .swiper .swiper-button-next {
-    right: -20px;
+    right: 120px;
 }
 .modal_example  .swiper-slide {
     width: 670px;
