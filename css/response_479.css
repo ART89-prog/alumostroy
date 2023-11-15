@@ -108,4 +108,7 @@
     {
         height: 346px;
     }
+    .characteristic_item-name {
+        width: 100%;
+    }
 }
